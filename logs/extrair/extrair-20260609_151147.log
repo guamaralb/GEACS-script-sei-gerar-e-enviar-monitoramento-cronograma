@@ -1,0 +1,52 @@
+2026-06-09 15:11:48,163 - INFO - FFE_2022 carregado: 88142 linhas
+2026-06-09 15:11:49,474 - INFO - FFE_2023 carregado: 95352 linhas
+2026-06-09 15:11:50,603 - INFO - FFE_2024 carregado: 82814 linhas
+2026-06-09 15:11:51,881 - INFO - FFE_2025 carregado: 91888 linhas
+2026-06-09 15:11:52,513 - INFO - FFE_2026 carregado: 42220 linhas
+2026-06-09 15:11:52,561 - INFO - FFEs concatenados: 400416 linhas no total
+2026-06-09 15:11:54,169 - INFO - Filtro aplicado: 293283/400416 linhas retidas (PJ, 2022/01-2025/12)
+2026-06-09 15:12:51,519 - INFO - FFEs completos salvos: ffes_completos-2026_06_09.xlsx (293283 linhas)
+2026-06-09 15:12:51,551 - INFO - EM CADASTRAMENTO salvo: remessas_em_cadastramento-2026_06_09.xlsx (5 linhas)
+2026-06-09 15:12:51,612 - INFO - PAG. PROCESSADO zerado salvo: remessas_pag_processado_zeradas-2026_06_09.xlsx (94 linhas)
+2026-06-09 15:12:51,649 - INFO - Monitoramento: EM REVISAO=637 | LIBERADO PAG=143 | PAG PROC ZERADO=94
+2026-06-09 15:12:51,723 - INFO - Monitoramento consolidado salvo: monitoramento-2026_06_09.xlsx (874 linhas)
+2026-06-09 15:12:51,886 - INFO - Gerando arquivos por regional (38 regionais)
+2026-06-09 15:12:51,919 - INFO - Regional ALFENAS: remessas-ALFENAS-2026_06_09.xlsx gerado
+2026-06-09 15:12:51,954 - INFO - Regional ALMENARA: remessas-ALMENARA-2026_06_09.xlsx gerado
+2026-06-09 15:12:51,990 - INFO - Regional ARAXA: remessas-ARAXA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,023 - INFO - Regional BARBACENA: remessas-BARBACENA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,069 - INFO - Regional BELO HORIZONTE: remessas-BELO HORIZONTE-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,101 - INFO - Regional BOM DESPACHO: remessas-BOM DESPACHO-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,135 - INFO - Regional BRASILIA DE  MINAS: remessas-BRASILIA DE  MINAS-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,169 - INFO - Regional CONSELHEIRO LAFAIETE: remessas-CONSELHEIRO LAFAIETE-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,205 - INFO - Regional CONTAGEM: remessas-CONTAGEM-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,243 - INFO - Regional CORONEL FABRICIANO: remessas-CORONEL FABRICIANO-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,278 - INFO - Regional CURVELO: remessas-CURVELO-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,313 - INFO - Regional DIAMANTINA: remessas-DIAMANTINA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,349 - INFO - Regional DIVINÓPOLIS: remessas-DIVINÓPOLIS-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,385 - INFO - Regional GOVERNADOR VALADARES: remessas-GOVERNADOR VALADARES-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,420 - INFO - Regional ITABIRA: remessas-ITABIRA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,454 - INFO - Regional ITAÚNA: remessas-ITAÚNA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,488 - INFO - Regional ITUIUTABA: remessas-ITUIUTABA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,522 - INFO - Regional JUIZ DE FORA: remessas-JUIZ DE FORA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,554 - INFO - Regional LAVRAS: remessas-LAVRAS-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,584 - INFO - Regional MANHUAÇU: remessas-MANHUAÇU-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,617 - INFO - Regional MONTES CLAROS: remessas-MONTES CLAROS-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,650 - INFO - Regional MURIAÉ: remessas-MURIAÉ-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,681 - INFO - Regional OLIVEIRA: remessas-OLIVEIRA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,710 - INFO - Regional PARACATU: remessas-PARACATU-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,742 - INFO - Regional PASSOS: remessas-PASSOS-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,775 - INFO - Regional PATOS DE MINAS: remessas-PATOS DE MINAS-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,811 - INFO - Regional PEDRO LEOPOLDO: remessas-PEDRO LEOPOLDO-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,842 - INFO - Regional POÇOS DE CALDAS: remessas-POÇOS DE CALDAS-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,888 - INFO - Regional PONTE NOVA: remessas-PONTE NOVA-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,922 - INFO - Regional POUSO ALEGRE: remessas-POUSO ALEGRE-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,954 - INFO - Regional SALINAS: remessas-SALINAS-2026_06_09.xlsx gerado
+2026-06-09 15:12:52,986 - INFO - Regional SAO JOAO DEL REI: remessas-SAO JOAO DEL REI-2026_06_09.xlsx gerado
+2026-06-09 15:12:53,017 - INFO - Regional SETE LAGOAS: remessas-SETE LAGOAS-2026_06_09.xlsx gerado
+2026-06-09 15:12:53,048 - INFO - Regional TEÓFILO OTONI: remessas-TEÓFILO OTONI-2026_06_09.xlsx gerado
+2026-06-09 15:12:53,082 - INFO - Regional UBÁ: remessas-UBÁ-2026_06_09.xlsx gerado
+2026-06-09 15:12:53,116 - INFO - Regional UBERABA: remessas-UBERABA-2026_06_09.xlsx gerado
+2026-06-09 15:12:53,165 - INFO - Regional UBERLANDIA: remessas-UBERLANDIA-2026_06_09.xlsx gerado
+2026-06-09 15:12:53,198 - INFO - Regional VARGINHA: remessas-VARGINHA-2026_06_09.xlsx gerado
+2026-06-09 15:12:53,198 - INFO - Processamento concluído

@@ -1,0 +1,25 @@
+2026-06-09 13:44:10,138 - INFO - Carregando FFE_2022
+2026-06-09 13:44:11,285 - INFO - FFE_2022 carregado
+2026-06-09 13:44:11,286 - INFO - Adicionando FFE_2022 à lista
+2026-06-09 13:44:11,286 - INFO - FFE_2022 adicionado à lista
+2026-06-09 13:44:11,286 - INFO - Carregando FFE_2023
+2026-06-09 13:44:12,512 - INFO - FFE_2023 carregado
+2026-06-09 13:44:12,513 - INFO - Adicionando FFE_2023 à lista
+2026-06-09 13:44:12,513 - INFO - FFE_2023 adicionado à lista
+2026-06-09 13:44:12,513 - INFO - Carregando FFE_2024
+2026-06-09 13:44:13,663 - INFO - FFE_2024 carregado
+2026-06-09 13:44:13,663 - INFO - Adicionando FFE_2024 à lista
+2026-06-09 13:44:13,673 - INFO - FFE_2024 adicionado à lista
+2026-06-09 13:44:13,673 - INFO - Carregando FFE_2025
+2026-06-09 13:44:14,871 - INFO - FFE_2025 carregado
+2026-06-09 13:44:14,871 - INFO - Adicionando FFE_2025 à lista
+2026-06-09 13:44:14,871 - INFO - FFE_2025 adicionado à lista
+2026-06-09 13:44:14,871 - INFO - Carregando FFE_2026
+2026-06-09 13:44:15,473 - INFO - FFE_2026 carregado
+2026-06-09 13:44:15,473 - INFO - Adicionando FFE_2026 à lista
+2026-06-09 13:44:15,474 - INFO - FFE_2026 adicionado à lista
+2026-06-09 13:44:15,474 - INFO - Reunindo todos os FFE
+2026-06-09 13:44:15,515 - INFO - FFE reunidos
+2026-06-09 13:44:17,078 - INFO - Filtrando FFE completo
+2026-06-09 13:44:17,170 - INFO - FFE completo filtrado
+2026-06-09 13:44:17,218 - INFO - Gerando .xlsx dos FFE completos

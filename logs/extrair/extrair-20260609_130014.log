@@ -1,0 +1,43 @@
+2026-06-09 13:00:14,642 - INFO - Carregando FFE_2021
+2026-06-09 13:00:15,773 - INFO - FFE_2021 carregado
+2026-06-09 13:00:15,773 - INFO - Adicionando FFE_2021 à lista
+2026-06-09 13:00:15,774 - INFO - FFE_2021 adicionado à lista
+2026-06-09 13:00:15,774 - INFO - Carregando FFE_2022
+2026-06-09 13:00:17,008 - INFO - FFE_2022 carregado
+2026-06-09 13:00:17,008 - INFO - Adicionando FFE_2022 à lista
+2026-06-09 13:00:17,008 - INFO - FFE_2022 adicionado à lista
+2026-06-09 13:00:17,008 - INFO - Carregando FFE_2023
+2026-06-09 13:00:18,332 - INFO - FFE_2023 carregado
+2026-06-09 13:00:18,332 - INFO - Adicionando FFE_2023 à lista
+2026-06-09 13:00:18,333 - INFO - FFE_2023 adicionado à lista
+2026-06-09 13:00:18,333 - INFO - Carregando FFE_2024
+2026-06-09 13:00:19,484 - INFO - FFE_2024 carregado
+2026-06-09 13:00:19,484 - INFO - Adicionando FFE_2024 à lista
+2026-06-09 13:00:19,484 - INFO - FFE_2024 adicionado à lista
+2026-06-09 13:00:19,484 - INFO - Reunindo todos os FFE
+2026-06-09 13:00:19,519 - INFO - FFE reunidos
+2026-06-09 13:00:19,519 - INFO - Filtrando FFE completo
+2026-06-09 13:00:19,532 - INFO - FFE completo filtrado
+2026-06-09 13:00:19,609 - INFO - Gerando .xlsx dos FFE completos
+2026-06-09 13:00:19,652 - INFO - .xlsx dos FFE completos gerado
+2026-06-09 13:00:19,652 - INFO - Obtendo remessas EM CADASTRAMENTO
+2026-06-09 13:00:19,653 - INFO - Remessas EM CADASTRAMENTO obtidas
+2026-06-09 13:00:19,653 - INFO - Gerando .xlsx das remessas EM CADASTRAMENTO
+2026-06-09 13:00:19,671 - INFO - .xlsx das remessas EM CADASTRAMENTO gerado
+2026-06-09 13:00:19,671 - INFO - Obtendo remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado
+2026-06-09 13:00:19,672 - INFO - Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado obtidas
+2026-06-09 13:00:19,672 - INFO - Gerando .xlsx das remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado
+2026-06-09 13:00:19,692 - INFO - .xlsx das remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado gerado
+2026-06-09 13:00:19,692 - INFO - Obtendo dados de contato das regionais
+2026-06-09 13:00:19,842 - INFO - Dados de contato das regionais obtidos
+2026-06-09 13:00:19,842 - INFO - Iniciando processamento de cada regional
+2026-06-09 13:00:19,842 - INFO - * Iniciando processamento da regional ALFENAS
+2026-06-09 13:00:19,843 - INFO - ** Obtendo TODAS remessas de ALFENAS
+2026-06-09 13:00:19,843 - INFO - **TODAS remessas de ALFENAS obtidas
+2026-06-09 13:00:19,843 - INFO - ** Obtendo remessas EM REVISAO de ALFENAS
+2026-06-09 13:00:19,844 - INFO - ** Remessas EM REVISAO de ALFENAS obtidas
+2026-06-09 13:00:19,844 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de ALFENAS
+2026-06-09 13:00:19,844 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de ALFENAS obtidas
+2026-06-09 13:00:19,844 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de ALFENAS
+2026-06-09 13:00:19,845 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de ALFENAS obtidas
+2026-06-09 13:00:19,845 - INFO - ** Gerando .xlsx das remessas de ALFENAS

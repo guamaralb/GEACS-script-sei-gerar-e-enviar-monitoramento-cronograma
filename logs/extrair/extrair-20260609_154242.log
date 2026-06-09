@@ -1,0 +1,10 @@
+2026-06-09 15:42:42,852 - INFO - ====== WebDriver manager ======
+2026-06-09 15:42:43,721 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-09 15:42:44,046 - INFO - There is no [win64] chromedriver "149.0.7827.55" for browser google-chrome "149.0.7827" in cache
+2026-06-09 15:42:44,439 - INFO - There is no [win64] chromedriver "149.0.7827.55" for browser google-chrome "149.0.7827" in cache
+2026-06-09 15:42:44,440 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-09 15:42:45,067 - INFO - WebDriver version 149.0.7827.55 selected
+2026-06-09 15:42:45,071 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.55/win64/chromedriver-win64.zip
+2026-06-09 15:42:45,079 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.55/win64/chromedriver-win64.zip
+2026-06-09 15:42:45,609 - INFO - Driver downloading response is 200
+2026-06-09 15:42:47,376 - INFO - Driver has been saved in cache [C:\Users\m755247\.wdm\drivers\chromedriver\win64\149.0.7827.55]

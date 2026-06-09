@@ -1,0 +1,256 @@
+2026-06-09 12:31:42,638 - INFO - Carregando FFE_2021
+2026-06-09 12:31:43,767 - INFO - FFE_2021 carregado
+2026-06-09 12:31:43,767 - INFO - Adicionando FFE_2021 à lista
+2026-06-09 12:31:43,767 - INFO - FFE_2021 adicionado à lista
+2026-06-09 12:31:43,767 - INFO - Carregando FFE_2022
+2026-06-09 12:31:45,026 - INFO - FFE_2022 carregado
+2026-06-09 12:31:45,026 - INFO - Adicionando FFE_2022 à lista
+2026-06-09 12:31:45,026 - INFO - FFE_2022 adicionado à lista
+2026-06-09 12:31:45,027 - INFO - Carregando FFE_2023
+2026-06-09 12:31:46,663 - INFO - FFE_2023 carregado
+2026-06-09 12:31:46,663 - INFO - Adicionando FFE_2023 à lista
+2026-06-09 12:31:46,672 - INFO - FFE_2023 adicionado à lista
+2026-06-09 12:31:46,672 - INFO - Carregando FFE_2024
+2026-06-09 12:31:47,850 - INFO - FFE_2024 carregado
+2026-06-09 12:31:47,850 - INFO - Adicionando FFE_2024 à lista
+2026-06-09 12:31:47,850 - INFO - FFE_2024 adicionado à lista
+2026-06-09 12:31:47,850 - INFO - Reunindo todos os FFE
+2026-06-09 12:31:47,885 - INFO - FFE reunidos
+2026-06-09 12:31:47,910 - INFO - Gerando .xlsx dos FFE completos
+2026-06-09 12:32:57,420 - INFO - .xlsx dos FFE completos gerado
+2026-06-09 12:32:57,420 - INFO - Obtendo remessas EM CADASTRAMENTO
+2026-06-09 12:32:57,432 - INFO - Remessas EM CADASTRAMENTO obtidas
+2026-06-09 12:32:57,433 - INFO - Gerando .xlsx das remessas EM CADASTRAMENTO
+2026-06-09 12:32:57,465 - INFO - .xlsx das remessas EM CADASTRAMENTO gerado
+2026-06-09 12:32:57,465 - INFO - Obtendo dados de contato das regionais
+2026-06-09 12:32:57,632 - INFO - Dados de contato das regionais obtidos
+2026-06-09 12:32:57,632 - INFO - Iniciando processamento de cada regional
+2026-06-09 12:32:57,633 - INFO - * Iniciando processamento da regional ALFENAS
+2026-06-09 12:32:57,633 - INFO - ** Obtendo remessas específicas de ALFENAS
+2026-06-09 12:32:57,669 - INFO - ** Remessas específicas de ALFENAS obtidas
+2026-06-09 12:32:57,669 - INFO - ** Gerando .xlsx das remessas de ALFENAS
+2026-06-09 12:32:57,700 - INFO - ** .xlsx das remessas de ALFENAS gerado
+2026-06-09 12:32:57,700 - INFO - * Finalizado processamento da regional ALFENAS
+2026-06-09 12:32:57,700 - INFO - * Iniciando processamento da regional ALMENARA
+2026-06-09 12:32:57,700 - INFO - ** Obtendo remessas específicas de ALMENARA
+2026-06-09 12:32:57,736 - INFO - ** Remessas específicas de ALMENARA obtidas
+2026-06-09 12:32:57,736 - INFO - ** Gerando .xlsx das remessas de ALMENARA
+2026-06-09 12:32:57,755 - INFO - ** .xlsx das remessas de ALMENARA gerado
+2026-06-09 12:32:57,755 - INFO - * Finalizado processamento da regional ALMENARA
+2026-06-09 12:32:57,756 - INFO - * Iniciando processamento da regional ARAXA
+2026-06-09 12:32:57,756 - INFO - ** Obtendo remessas específicas de ARAXA
+2026-06-09 12:32:57,792 - INFO - ** Remessas específicas de ARAXA obtidas
+2026-06-09 12:32:57,792 - INFO - ** Gerando .xlsx das remessas de ARAXA
+2026-06-09 12:32:57,822 - INFO - ** .xlsx das remessas de ARAXA gerado
+2026-06-09 12:32:57,822 - INFO - * Finalizado processamento da regional ARAXA
+2026-06-09 12:32:57,823 - INFO - * Iniciando processamento da regional BARBACENA
+2026-06-09 12:32:57,823 - INFO - ** Obtendo remessas específicas de BARBACENA
+2026-06-09 12:32:57,864 - INFO - ** Remessas específicas de BARBACENA obtidas
+2026-06-09 12:32:57,864 - INFO - ** Gerando .xlsx das remessas de BARBACENA
+2026-06-09 12:32:57,884 - INFO - ** .xlsx das remessas de BARBACENA gerado
+2026-06-09 12:32:57,884 - INFO - * Finalizado processamento da regional BARBACENA
+2026-06-09 12:32:57,884 - INFO - * Iniciando processamento da regional BELO HORIZONTE
+2026-06-09 12:32:57,884 - INFO - ** Obtendo remessas específicas de BELO HORIZONTE
+2026-06-09 12:32:57,922 - INFO - ** Remessas específicas de BELO HORIZONTE obtidas
+2026-06-09 12:32:57,923 - INFO - ** Gerando .xlsx das remessas de BELO HORIZONTE
+2026-06-09 12:32:57,962 - INFO - ** .xlsx das remessas de BELO HORIZONTE gerado
+2026-06-09 12:32:57,962 - INFO - * Finalizado processamento da regional BELO HORIZONTE
+2026-06-09 12:32:57,963 - INFO - * Iniciando processamento da regional BOM DESPACHO
+2026-06-09 12:32:57,963 - INFO - ** Obtendo remessas específicas de BOM DESPACHO
+2026-06-09 12:32:58,005 - INFO - ** Remessas específicas de BOM DESPACHO obtidas
+2026-06-09 12:32:58,005 - INFO - ** Gerando .xlsx das remessas de BOM DESPACHO
+2026-06-09 12:32:58,026 - INFO - ** .xlsx das remessas de BOM DESPACHO gerado
+2026-06-09 12:32:58,026 - INFO - * Finalizado processamento da regional BOM DESPACHO
+2026-06-09 12:32:58,026 - INFO - * Iniciando processamento da regional BRASILIA DE  MINAS
+2026-06-09 12:32:58,026 - INFO - ** Obtendo remessas específicas de BRASILIA DE  MINAS
+2026-06-09 12:32:58,067 - INFO - ** Remessas específicas de BRASILIA DE  MINAS obtidas
+2026-06-09 12:32:58,067 - INFO - ** Gerando .xlsx das remessas de BRASILIA DE  MINAS
+2026-06-09 12:32:58,089 - INFO - ** .xlsx das remessas de BRASILIA DE  MINAS gerado
+2026-06-09 12:32:58,089 - INFO - * Finalizado processamento da regional BRASILIA DE  MINAS
+2026-06-09 12:32:58,089 - INFO - * Iniciando processamento da regional CONSELHEIRO LAFAIETE
+2026-06-09 12:32:58,089 - INFO - ** Obtendo remessas específicas de CONSELHEIRO LAFAIETE
+2026-06-09 12:32:58,130 - INFO - ** Remessas específicas de CONSELHEIRO LAFAIETE obtidas
+2026-06-09 12:32:58,130 - INFO - ** Gerando .xlsx das remessas de CONSELHEIRO LAFAIETE
+2026-06-09 12:32:58,154 - INFO - ** .xlsx das remessas de CONSELHEIRO LAFAIETE gerado
+2026-06-09 12:32:58,154 - INFO - * Finalizado processamento da regional CONSELHEIRO LAFAIETE
+2026-06-09 12:32:58,154 - INFO - * Iniciando processamento da regional CONTAGEM
+2026-06-09 12:32:58,154 - INFO - ** Obtendo remessas específicas de CONTAGEM
+2026-06-09 12:32:58,190 - INFO - ** Remessas específicas de CONTAGEM obtidas
+2026-06-09 12:32:58,191 - INFO - ** Gerando .xlsx das remessas de CONTAGEM
+2026-06-09 12:32:58,217 - INFO - ** .xlsx das remessas de CONTAGEM gerado
+2026-06-09 12:32:58,217 - INFO - * Finalizado processamento da regional CONTAGEM
+2026-06-09 12:32:58,217 - INFO - * Iniciando processamento da regional CORONEL FABRICIANO
+2026-06-09 12:32:58,217 - INFO - ** Obtendo remessas específicas de CORONEL FABRICIANO
+2026-06-09 12:32:58,256 - INFO - ** Remessas específicas de CORONEL FABRICIANO obtidas
+2026-06-09 12:32:58,256 - INFO - ** Gerando .xlsx das remessas de CORONEL FABRICIANO
+2026-06-09 12:32:58,277 - INFO - ** .xlsx das remessas de CORONEL FABRICIANO gerado
+2026-06-09 12:32:58,277 - INFO - * Finalizado processamento da regional CORONEL FABRICIANO
+2026-06-09 12:32:58,277 - INFO - * Iniciando processamento da regional CURVELO
+2026-06-09 12:32:58,277 - INFO - ** Obtendo remessas específicas de CURVELO
+2026-06-09 12:32:58,318 - INFO - ** Remessas específicas de CURVELO obtidas
+2026-06-09 12:32:58,318 - INFO - ** Gerando .xlsx das remessas de CURVELO
+2026-06-09 12:32:58,339 - INFO - ** .xlsx das remessas de CURVELO gerado
+2026-06-09 12:32:58,339 - INFO - * Finalizado processamento da regional CURVELO
+2026-06-09 12:32:58,339 - INFO - * Iniciando processamento da regional DIAMANTINA
+2026-06-09 12:32:58,339 - INFO - ** Obtendo remessas específicas de DIAMANTINA
+2026-06-09 12:32:58,381 - INFO - ** Remessas específicas de DIAMANTINA obtidas
+2026-06-09 12:32:58,381 - INFO - ** Gerando .xlsx das remessas de DIAMANTINA
+2026-06-09 12:32:58,405 - INFO - ** .xlsx das remessas de DIAMANTINA gerado
+2026-06-09 12:32:58,405 - INFO - * Finalizado processamento da regional DIAMANTINA
+2026-06-09 12:32:58,405 - INFO - * Iniciando processamento da regional DIVINÓPOLIS
+2026-06-09 12:32:58,405 - INFO - ** Obtendo remessas específicas de DIVINÓPOLIS
+2026-06-09 12:32:58,446 - INFO - ** Remessas específicas de DIVINÓPOLIS obtidas
+2026-06-09 12:32:58,446 - INFO - ** Gerando .xlsx das remessas de DIVINÓPOLIS
+2026-06-09 12:32:58,471 - INFO - ** .xlsx das remessas de DIVINÓPOLIS gerado
+2026-06-09 12:32:58,471 - INFO - * Finalizado processamento da regional DIVINÓPOLIS
+2026-06-09 12:32:58,471 - INFO - * Iniciando processamento da regional GOVERNADOR VALADARES
+2026-06-09 12:32:58,471 - INFO - ** Obtendo remessas específicas de GOVERNADOR VALADARES
+2026-06-09 12:32:58,512 - INFO - ** Remessas específicas de GOVERNADOR VALADARES obtidas
+2026-06-09 12:32:58,513 - INFO - ** Gerando .xlsx das remessas de GOVERNADOR VALADARES
+2026-06-09 12:32:58,537 - INFO - ** .xlsx das remessas de GOVERNADOR VALADARES gerado
+2026-06-09 12:32:58,537 - INFO - * Finalizado processamento da regional GOVERNADOR VALADARES
+2026-06-09 12:32:58,537 - INFO - * Iniciando processamento da regional ITABIRA
+2026-06-09 12:32:58,537 - INFO - ** Obtendo remessas específicas de ITABIRA
+2026-06-09 12:32:58,575 - INFO - ** Remessas específicas de ITABIRA obtidas
+2026-06-09 12:32:58,575 - INFO - ** Gerando .xlsx das remessas de ITABIRA
+2026-06-09 12:32:58,597 - INFO - ** .xlsx das remessas de ITABIRA gerado
+2026-06-09 12:32:58,597 - INFO - * Finalizado processamento da regional ITABIRA
+2026-06-09 12:32:58,597 - INFO - * Iniciando processamento da regional ITAÚNA
+2026-06-09 12:32:58,597 - INFO - ** Obtendo remessas específicas de ITAÚNA
+2026-06-09 12:32:58,638 - INFO - ** Remessas específicas de ITAÚNA obtidas
+2026-06-09 12:32:58,638 - INFO - ** Gerando .xlsx das remessas de ITAÚNA
+2026-06-09 12:32:58,662 - INFO - ** .xlsx das remessas de ITAÚNA gerado
+2026-06-09 12:32:58,662 - INFO - * Finalizado processamento da regional ITAÚNA
+2026-06-09 12:32:58,662 - INFO - * Iniciando processamento da regional ITUIUTABA
+2026-06-09 12:32:58,662 - INFO - ** Obtendo remessas específicas de ITUIUTABA
+2026-06-09 12:32:58,704 - INFO - ** Remessas específicas de ITUIUTABA obtidas
+2026-06-09 12:32:58,704 - INFO - ** Gerando .xlsx das remessas de ITUIUTABA
+2026-06-09 12:32:58,726 - INFO - ** .xlsx das remessas de ITUIUTABA gerado
+2026-06-09 12:32:58,726 - INFO - * Finalizado processamento da regional ITUIUTABA
+2026-06-09 12:32:58,727 - INFO - * Iniciando processamento da regional JUIZ DE FORA
+2026-06-09 12:32:58,727 - INFO - ** Obtendo remessas específicas de JUIZ DE FORA
+2026-06-09 12:32:58,767 - INFO - ** Remessas específicas de JUIZ DE FORA obtidas
+2026-06-09 12:32:58,767 - INFO - ** Gerando .xlsx das remessas de JUIZ DE FORA
+2026-06-09 12:32:58,792 - INFO - ** .xlsx das remessas de JUIZ DE FORA gerado
+2026-06-09 12:32:58,792 - INFO - * Finalizado processamento da regional JUIZ DE FORA
+2026-06-09 12:32:58,792 - INFO - * Iniciando processamento da regional LAVRAS
+2026-06-09 12:32:58,792 - INFO - ** Obtendo remessas específicas de LAVRAS
+2026-06-09 12:32:58,836 - INFO - ** Remessas específicas de LAVRAS obtidas
+2026-06-09 12:32:58,836 - INFO - ** Gerando .xlsx das remessas de LAVRAS
+2026-06-09 12:32:58,858 - INFO - ** .xlsx das remessas de LAVRAS gerado
+2026-06-09 12:32:58,859 - INFO - * Finalizado processamento da regional LAVRAS
+2026-06-09 12:32:58,859 - INFO - * Iniciando processamento da regional MANHUAÇU
+2026-06-09 12:32:58,859 - INFO - ** Obtendo remessas específicas de MANHUAÇU
+2026-06-09 12:32:58,901 - INFO - ** Remessas específicas de MANHUAÇU obtidas
+2026-06-09 12:32:58,901 - INFO - ** Gerando .xlsx das remessas de MANHUAÇU
+2026-06-09 12:32:58,923 - INFO - ** .xlsx das remessas de MANHUAÇU gerado
+2026-06-09 12:32:58,924 - INFO - * Finalizado processamento da regional MANHUAÇU
+2026-06-09 12:32:58,924 - INFO - * Iniciando processamento da regional MONTES CLAROS
+2026-06-09 12:32:58,924 - INFO - ** Obtendo remessas específicas de MONTES CLAROS
+2026-06-09 12:32:58,966 - INFO - ** Remessas específicas de MONTES CLAROS obtidas
+2026-06-09 12:32:58,967 - INFO - ** Gerando .xlsx das remessas de MONTES CLAROS
+2026-06-09 12:32:58,993 - INFO - ** .xlsx das remessas de MONTES CLAROS gerado
+2026-06-09 12:32:58,993 - INFO - * Finalizado processamento da regional MONTES CLAROS
+2026-06-09 12:32:58,993 - INFO - * Iniciando processamento da regional MURIAÉ
+2026-06-09 12:32:58,993 - INFO - ** Obtendo remessas específicas de MURIAÉ
+2026-06-09 12:32:59,035 - INFO - ** Remessas específicas de MURIAÉ obtidas
+2026-06-09 12:32:59,036 - INFO - ** Gerando .xlsx das remessas de MURIAÉ
+2026-06-09 12:32:59,060 - INFO - ** .xlsx das remessas de MURIAÉ gerado
+2026-06-09 12:32:59,061 - INFO - * Finalizado processamento da regional MURIAÉ
+2026-06-09 12:32:59,061 - INFO - * Iniciando processamento da regional OLIVEIRA
+2026-06-09 12:32:59,061 - INFO - ** Obtendo remessas específicas de OLIVEIRA
+2026-06-09 12:32:59,102 - INFO - ** Remessas específicas de OLIVEIRA obtidas
+2026-06-09 12:32:59,102 - INFO - ** Gerando .xlsx das remessas de OLIVEIRA
+2026-06-09 12:32:59,128 - INFO - ** .xlsx das remessas de OLIVEIRA gerado
+2026-06-09 12:32:59,128 - INFO - * Finalizado processamento da regional OLIVEIRA
+2026-06-09 12:32:59,128 - INFO - * Iniciando processamento da regional PARACATU
+2026-06-09 12:32:59,128 - INFO - ** Obtendo remessas específicas de PARACATU
+2026-06-09 12:32:59,171 - INFO - ** Remessas específicas de PARACATU obtidas
+2026-06-09 12:32:59,172 - INFO - ** Gerando .xlsx das remessas de PARACATU
+2026-06-09 12:32:59,194 - INFO - ** .xlsx das remessas de PARACATU gerado
+2026-06-09 12:32:59,195 - INFO - * Finalizado processamento da regional PARACATU
+2026-06-09 12:32:59,195 - INFO - * Iniciando processamento da regional PASSOS
+2026-06-09 12:32:59,195 - INFO - ** Obtendo remessas específicas de PASSOS
+2026-06-09 12:32:59,237 - INFO - ** Remessas específicas de PASSOS obtidas
+2026-06-09 12:32:59,237 - INFO - ** Gerando .xlsx das remessas de PASSOS
+2026-06-09 12:32:59,264 - INFO - ** .xlsx das remessas de PASSOS gerado
+2026-06-09 12:32:59,264 - INFO - * Finalizado processamento da regional PASSOS
+2026-06-09 12:32:59,264 - INFO - * Iniciando processamento da regional PATOS DE MINAS
+2026-06-09 12:32:59,264 - INFO - ** Obtendo remessas específicas de PATOS DE MINAS
+2026-06-09 12:32:59,304 - INFO - ** Remessas específicas de PATOS DE MINAS obtidas
+2026-06-09 12:32:59,304 - INFO - ** Gerando .xlsx das remessas de PATOS DE MINAS
+2026-06-09 12:32:59,331 - INFO - ** .xlsx das remessas de PATOS DE MINAS gerado
+2026-06-09 12:32:59,331 - INFO - * Finalizado processamento da regional PATOS DE MINAS
+2026-06-09 12:32:59,332 - INFO - * Iniciando processamento da regional PEDRO LEOPOLDO
+2026-06-09 12:32:59,332 - INFO - ** Obtendo remessas específicas de PEDRO LEOPOLDO
+2026-06-09 12:32:59,374 - INFO - ** Remessas específicas de PEDRO LEOPOLDO obtidas
+2026-06-09 12:32:59,375 - INFO - ** Gerando .xlsx das remessas de PEDRO LEOPOLDO
+2026-06-09 12:32:59,395 - INFO - ** .xlsx das remessas de PEDRO LEOPOLDO gerado
+2026-06-09 12:32:59,395 - INFO - * Finalizado processamento da regional PEDRO LEOPOLDO
+2026-06-09 12:32:59,396 - INFO - * Iniciando processamento da regional POÇOS DE CALDAS
+2026-06-09 12:32:59,396 - INFO - ** Obtendo remessas específicas de POÇOS DE CALDAS
+2026-06-09 12:32:59,437 - INFO - ** Remessas específicas de POÇOS DE CALDAS obtidas
+2026-06-09 12:32:59,438 - INFO - ** Gerando .xlsx das remessas de POÇOS DE CALDAS
+2026-06-09 12:32:59,457 - INFO - ** .xlsx das remessas de POÇOS DE CALDAS gerado
+2026-06-09 12:32:59,457 - INFO - * Finalizado processamento da regional POÇOS DE CALDAS
+2026-06-09 12:32:59,458 - INFO - * Iniciando processamento da regional PONTE NOVA
+2026-06-09 12:32:59,458 - INFO - ** Obtendo remessas específicas de PONTE NOVA
+2026-06-09 12:32:59,498 - INFO - ** Remessas específicas de PONTE NOVA obtidas
+2026-06-09 12:32:59,498 - INFO - ** Gerando .xlsx das remessas de PONTE NOVA
+2026-06-09 12:32:59,522 - INFO - ** .xlsx das remessas de PONTE NOVA gerado
+2026-06-09 12:32:59,523 - INFO - * Finalizado processamento da regional PONTE NOVA
+2026-06-09 12:32:59,523 - INFO - * Iniciando processamento da regional POUSO ALEGRE
+2026-06-09 12:32:59,523 - INFO - ** Obtendo remessas específicas de POUSO ALEGRE
+2026-06-09 12:32:59,564 - INFO - ** Remessas específicas de POUSO ALEGRE obtidas
+2026-06-09 12:32:59,564 - INFO - ** Gerando .xlsx das remessas de POUSO ALEGRE
+2026-06-09 12:32:59,590 - INFO - ** .xlsx das remessas de POUSO ALEGRE gerado
+2026-06-09 12:32:59,591 - INFO - * Finalizado processamento da regional POUSO ALEGRE
+2026-06-09 12:32:59,591 - INFO - * Iniciando processamento da regional SALINAS
+2026-06-09 12:32:59,591 - INFO - ** Obtendo remessas específicas de SALINAS
+2026-06-09 12:32:59,631 - INFO - ** Remessas específicas de SALINAS obtidas
+2026-06-09 12:32:59,632 - INFO - ** Gerando .xlsx das remessas de SALINAS
+2026-06-09 12:32:59,654 - INFO - ** .xlsx das remessas de SALINAS gerado
+2026-06-09 12:32:59,654 - INFO - * Finalizado processamento da regional SALINAS
+2026-06-09 12:32:59,654 - INFO - * Iniciando processamento da regional SAO JOAO DEL REI
+2026-06-09 12:32:59,655 - INFO - ** Obtendo remessas específicas de SAO JOAO DEL REI
+2026-06-09 12:32:59,695 - INFO - ** Remessas específicas de SAO JOAO DEL REI obtidas
+2026-06-09 12:32:59,695 - INFO - ** Gerando .xlsx das remessas de SAO JOAO DEL REI
+2026-06-09 12:32:59,716 - INFO - ** .xlsx das remessas de SAO JOAO DEL REI gerado
+2026-06-09 12:32:59,716 - INFO - * Finalizado processamento da regional SAO JOAO DEL REI
+2026-06-09 12:32:59,716 - INFO - * Iniciando processamento da regional SETE LAGOAS
+2026-06-09 12:32:59,716 - INFO - ** Obtendo remessas específicas de SETE LAGOAS
+2026-06-09 12:32:59,757 - INFO - ** Remessas específicas de SETE LAGOAS obtidas
+2026-06-09 12:32:59,757 - INFO - ** Gerando .xlsx das remessas de SETE LAGOAS
+2026-06-09 12:32:59,779 - INFO - ** .xlsx das remessas de SETE LAGOAS gerado
+2026-06-09 12:32:59,779 - INFO - * Finalizado processamento da regional SETE LAGOAS
+2026-06-09 12:32:59,780 - INFO - * Iniciando processamento da regional TEÓFILO OTONI
+2026-06-09 12:32:59,780 - INFO - ** Obtendo remessas específicas de TEÓFILO OTONI
+2026-06-09 12:32:59,817 - INFO - ** Remessas específicas de TEÓFILO OTONI obtidas
+2026-06-09 12:32:59,817 - INFO - ** Gerando .xlsx das remessas de TEÓFILO OTONI
+2026-06-09 12:32:59,845 - INFO - ** .xlsx das remessas de TEÓFILO OTONI gerado
+2026-06-09 12:32:59,845 - INFO - * Finalizado processamento da regional TEÓFILO OTONI
+2026-06-09 12:32:59,846 - INFO - * Iniciando processamento da regional UBÁ
+2026-06-09 12:32:59,846 - INFO - ** Obtendo remessas específicas de UBÁ
+2026-06-09 12:32:59,886 - INFO - ** Remessas específicas de UBÁ obtidas
+2026-06-09 12:32:59,886 - INFO - ** Gerando .xlsx das remessas de UBÁ
+2026-06-09 12:32:59,907 - INFO - ** .xlsx das remessas de UBÁ gerado
+2026-06-09 12:32:59,907 - INFO - * Finalizado processamento da regional UBÁ
+2026-06-09 12:32:59,908 - INFO - * Iniciando processamento da regional UBERABA
+2026-06-09 12:32:59,908 - INFO - ** Obtendo remessas específicas de UBERABA
+2026-06-09 12:32:59,948 - INFO - ** Remessas específicas de UBERABA obtidas
+2026-06-09 12:32:59,949 - INFO - ** Gerando .xlsx das remessas de UBERABA
+2026-06-09 12:32:59,974 - INFO - ** .xlsx das remessas de UBERABA gerado
+2026-06-09 12:32:59,974 - INFO - * Finalizado processamento da regional UBERABA
+2026-06-09 12:32:59,974 - INFO - * Iniciando processamento da regional UBERLANDIA
+2026-06-09 12:32:59,974 - INFO - ** Obtendo remessas específicas de UBERLANDIA
+2026-06-09 12:33:00,016 - INFO - ** Remessas específicas de UBERLANDIA obtidas
+2026-06-09 12:33:00,016 - INFO - ** Gerando .xlsx das remessas de UBERLANDIA
+2026-06-09 12:33:00,052 - INFO - ** .xlsx das remessas de UBERLANDIA gerado
+2026-06-09 12:33:00,052 - INFO - * Finalizado processamento da regional UBERLANDIA
+2026-06-09 12:33:00,053 - INFO - * Iniciando processamento da regional VARGINHA
+2026-06-09 12:33:00,053 - INFO - ** Obtendo remessas específicas de VARGINHA
+2026-06-09 12:33:00,092 - INFO - ** Remessas específicas de VARGINHA obtidas
+2026-06-09 12:33:00,092 - INFO - ** Gerando .xlsx das remessas de VARGINHA
+2026-06-09 12:33:00,112 - INFO - ** .xlsx das remessas de VARGINHA gerado
+2026-06-09 12:33:00,112 - INFO - * Finalizado processamento da regional VARGINHA
+2026-06-09 12:33:00,113 - INFO - Finalizado processamento de cada regional

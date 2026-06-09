@@ -1,0 +1,5 @@
+2026-06-09 16:07:24,106 - INFO - ====== WebDriver manager ======
+2026-06-09 16:07:24,540 - INFO - Driver [C:\Users\m755247\.wdm\drivers\chromedriver\win64\149.0.7827.55\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-09 16:07:34,383 - INFO - Gerando processos por regional (38 regionais)
+2026-06-09 16:07:38,971 - INFO - Regional ALFENAS: remessas-ALFENAS-2026_06_09.xlsx gerado
+2026-06-09 16:07:43,483 - INFO - Regional ALMENARA: remessas-ALMENARA-2026_06_09.xlsx gerado

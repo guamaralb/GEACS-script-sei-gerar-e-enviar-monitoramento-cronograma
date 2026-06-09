@@ -1,0 +1,494 @@
+2026-06-09 13:45:11,919 - INFO - Carregando FFE_2022
+2026-06-09 13:45:13,016 - INFO - FFE_2022 carregado
+2026-06-09 13:45:13,016 - INFO - Adicionando FFE_2022 à lista
+2026-06-09 13:45:13,016 - INFO - FFE_2022 adicionado à lista
+2026-06-09 13:45:13,016 - INFO - Carregando FFE_2023
+2026-06-09 13:45:14,241 - INFO - FFE_2023 carregado
+2026-06-09 13:45:14,241 - INFO - Adicionando FFE_2023 à lista
+2026-06-09 13:45:14,242 - INFO - FFE_2023 adicionado à lista
+2026-06-09 13:45:14,242 - INFO - Carregando FFE_2024
+2026-06-09 13:45:15,370 - INFO - FFE_2024 carregado
+2026-06-09 13:45:15,370 - INFO - Adicionando FFE_2024 à lista
+2026-06-09 13:45:15,379 - INFO - FFE_2024 adicionado à lista
+2026-06-09 13:45:15,380 - INFO - Carregando FFE_2025
+2026-06-09 13:45:16,575 - INFO - FFE_2025 carregado
+2026-06-09 13:45:16,575 - INFO - Adicionando FFE_2025 à lista
+2026-06-09 13:45:16,576 - INFO - FFE_2025 adicionado à lista
+2026-06-09 13:45:16,576 - INFO - Carregando FFE_2026
+2026-06-09 13:45:17,196 - INFO - FFE_2026 carregado
+2026-06-09 13:45:17,196 - INFO - Adicionando FFE_2026 à lista
+2026-06-09 13:45:17,196 - INFO - FFE_2026 adicionado à lista
+2026-06-09 13:45:17,197 - INFO - Reunindo todos os FFE
+2026-06-09 13:45:17,239 - INFO - FFE reunidos
+2026-06-09 13:45:18,801 - INFO - Filtrando FFE completo
+2026-06-09 13:45:18,893 - INFO - FFE completo filtrado
+2026-06-09 13:45:18,942 - INFO - Gerando .xlsx dos FFE completos
+2026-06-09 13:46:17,161 - INFO - .xlsx dos FFE completos gerado
+2026-06-09 13:46:17,161 - INFO - Obtendo remessas EM CADASTRAMENTO
+2026-06-09 13:46:17,170 - INFO - Remessas EM CADASTRAMENTO obtidas
+2026-06-09 13:46:17,171 - INFO - Gerando .xlsx das remessas EM CADASTRAMENTO
+2026-06-09 13:46:17,203 - INFO - .xlsx das remessas EM CADASTRAMENTO gerado
+2026-06-09 13:46:17,203 - INFO - Obtendo remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado
+2026-06-09 13:46:17,216 - INFO - Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado obtidas
+2026-06-09 13:46:17,216 - INFO - Gerando .xlsx das remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado
+2026-06-09 13:46:17,263 - INFO - .xlsx das remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado gerado
+2026-06-09 13:46:17,263 - INFO - Obtendo dados de contato das regionais
+2026-06-09 13:46:17,469 - INFO - Dados de contato das regionais obtidos
+2026-06-09 13:46:17,470 - INFO - Iniciando processamento de cada regional
+2026-06-09 13:46:17,470 - INFO - * Iniciando processamento da regional ALFENAS
+2026-06-09 13:46:17,470 - INFO - ** Obtendo TODAS remessas de ALFENAS
+2026-06-09 13:46:17,485 - INFO - **TODAS remessas de ALFENAS obtidas
+2026-06-09 13:46:17,485 - INFO - ** Obtendo remessas EM REVISAO de ALFENAS
+2026-06-09 13:46:17,486 - INFO - ** Remessas EM REVISAO de ALFENAS obtidas
+2026-06-09 13:46:17,486 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de ALFENAS
+2026-06-09 13:46:17,487 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de ALFENAS obtidas
+2026-06-09 13:46:17,487 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de ALFENAS
+2026-06-09 13:46:17,488 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de ALFENAS obtidas
+2026-06-09 13:46:17,488 - INFO - ** Gerando .xlsx das remessas de ALFENAS
+2026-06-09 13:46:17,533 - INFO - ** .xlsx das remessas de ALFENAS gerado
+2026-06-09 13:46:17,533 - INFO - * Finalizado processamento da regional ALFENAS
+2026-06-09 13:46:17,533 - INFO - * Iniciando processamento da regional ALMENARA
+2026-06-09 13:46:17,533 - INFO - ** Obtendo TODAS remessas de ALMENARA
+2026-06-09 13:46:17,546 - INFO - **TODAS remessas de ALMENARA obtidas
+2026-06-09 13:46:17,546 - INFO - ** Obtendo remessas EM REVISAO de ALMENARA
+2026-06-09 13:46:17,546 - INFO - ** Remessas EM REVISAO de ALMENARA obtidas
+2026-06-09 13:46:17,547 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de ALMENARA
+2026-06-09 13:46:17,547 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de ALMENARA obtidas
+2026-06-09 13:46:17,547 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de ALMENARA
+2026-06-09 13:46:17,548 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de ALMENARA obtidas
+2026-06-09 13:46:17,548 - INFO - ** Gerando .xlsx das remessas de ALMENARA
+2026-06-09 13:46:17,576 - INFO - ** .xlsx das remessas de ALMENARA gerado
+2026-06-09 13:46:17,577 - INFO - * Finalizado processamento da regional ALMENARA
+2026-06-09 13:46:17,577 - INFO - * Iniciando processamento da regional ARAXA
+2026-06-09 13:46:17,577 - INFO - ** Obtendo TODAS remessas de ARAXA
+2026-06-09 13:46:17,590 - INFO - **TODAS remessas de ARAXA obtidas
+2026-06-09 13:46:17,590 - INFO - ** Obtendo remessas EM REVISAO de ARAXA
+2026-06-09 13:46:17,591 - INFO - ** Remessas EM REVISAO de ARAXA obtidas
+2026-06-09 13:46:17,591 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de ARAXA
+2026-06-09 13:46:17,591 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de ARAXA obtidas
+2026-06-09 13:46:17,592 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de ARAXA
+2026-06-09 13:46:17,592 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de ARAXA obtidas
+2026-06-09 13:46:17,592 - INFO - ** Gerando .xlsx das remessas de ARAXA
+2026-06-09 13:46:17,625 - INFO - ** .xlsx das remessas de ARAXA gerado
+2026-06-09 13:46:17,626 - INFO - * Finalizado processamento da regional ARAXA
+2026-06-09 13:46:17,626 - INFO - * Iniciando processamento da regional BARBACENA
+2026-06-09 13:46:17,626 - INFO - ** Obtendo TODAS remessas de BARBACENA
+2026-06-09 13:46:17,640 - INFO - **TODAS remessas de BARBACENA obtidas
+2026-06-09 13:46:17,640 - INFO - ** Obtendo remessas EM REVISAO de BARBACENA
+2026-06-09 13:46:17,640 - INFO - ** Remessas EM REVISAO de BARBACENA obtidas
+2026-06-09 13:46:17,641 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de BARBACENA
+2026-06-09 13:46:17,641 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de BARBACENA obtidas
+2026-06-09 13:46:17,641 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de BARBACENA
+2026-06-09 13:46:17,642 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de BARBACENA obtidas
+2026-06-09 13:46:17,642 - INFO - ** Gerando .xlsx das remessas de BARBACENA
+2026-06-09 13:46:17,669 - INFO - ** .xlsx das remessas de BARBACENA gerado
+2026-06-09 13:46:17,669 - INFO - * Finalizado processamento da regional BARBACENA
+2026-06-09 13:46:17,669 - INFO - * Iniciando processamento da regional BELO HORIZONTE
+2026-06-09 13:46:17,670 - INFO - ** Obtendo TODAS remessas de BELO HORIZONTE
+2026-06-09 13:46:17,692 - INFO - **TODAS remessas de BELO HORIZONTE obtidas
+2026-06-09 13:46:17,692 - INFO - ** Obtendo remessas EM REVISAO de BELO HORIZONTE
+2026-06-09 13:46:17,694 - INFO - ** Remessas EM REVISAO de BELO HORIZONTE obtidas
+2026-06-09 13:46:17,695 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de BELO HORIZONTE
+2026-06-09 13:46:17,697 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de BELO HORIZONTE obtidas
+2026-06-09 13:46:17,697 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de BELO HORIZONTE
+2026-06-09 13:46:17,699 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de BELO HORIZONTE obtidas
+2026-06-09 13:46:17,699 - INFO - ** Gerando .xlsx das remessas de BELO HORIZONTE
+2026-06-09 13:46:17,762 - INFO - ** .xlsx das remessas de BELO HORIZONTE gerado
+2026-06-09 13:46:17,763 - INFO - * Finalizado processamento da regional BELO HORIZONTE
+2026-06-09 13:46:17,763 - INFO - * Iniciando processamento da regional BOM DESPACHO
+2026-06-09 13:46:17,763 - INFO - ** Obtendo TODAS remessas de BOM DESPACHO
+2026-06-09 13:46:17,777 - INFO - **TODAS remessas de BOM DESPACHO obtidas
+2026-06-09 13:46:17,777 - INFO - ** Obtendo remessas EM REVISAO de BOM DESPACHO
+2026-06-09 13:46:17,777 - INFO - ** Remessas EM REVISAO de BOM DESPACHO obtidas
+2026-06-09 13:46:17,777 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de BOM DESPACHO
+2026-06-09 13:46:17,778 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de BOM DESPACHO obtidas
+2026-06-09 13:46:17,778 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de BOM DESPACHO
+2026-06-09 13:46:17,779 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de BOM DESPACHO obtidas
+2026-06-09 13:46:17,779 - INFO - ** Gerando .xlsx das remessas de BOM DESPACHO
+2026-06-09 13:46:17,806 - INFO - ** .xlsx das remessas de BOM DESPACHO gerado
+2026-06-09 13:46:17,806 - INFO - * Finalizado processamento da regional BOM DESPACHO
+2026-06-09 13:46:17,806 - INFO - * Iniciando processamento da regional BRASILIA DE  MINAS
+2026-06-09 13:46:17,806 - INFO - ** Obtendo TODAS remessas de BRASILIA DE  MINAS
+2026-06-09 13:46:17,820 - INFO - **TODAS remessas de BRASILIA DE  MINAS obtidas
+2026-06-09 13:46:17,820 - INFO - ** Obtendo remessas EM REVISAO de BRASILIA DE  MINAS
+2026-06-09 13:46:17,821 - INFO - ** Remessas EM REVISAO de BRASILIA DE  MINAS obtidas
+2026-06-09 13:46:17,821 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de BRASILIA DE  MINAS
+2026-06-09 13:46:17,821 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de BRASILIA DE  MINAS obtidas
+2026-06-09 13:46:17,822 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de BRASILIA DE  MINAS
+2026-06-09 13:46:17,822 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de BRASILIA DE  MINAS obtidas
+2026-06-09 13:46:17,823 - INFO - ** Gerando .xlsx das remessas de BRASILIA DE  MINAS
+2026-06-09 13:46:17,853 - INFO - ** .xlsx das remessas de BRASILIA DE  MINAS gerado
+2026-06-09 13:46:17,853 - INFO - * Finalizado processamento da regional BRASILIA DE  MINAS
+2026-06-09 13:46:17,853 - INFO - * Iniciando processamento da regional CONSELHEIRO LAFAIETE
+2026-06-09 13:46:17,854 - INFO - ** Obtendo TODAS remessas de CONSELHEIRO LAFAIETE
+2026-06-09 13:46:17,868 - INFO - **TODAS remessas de CONSELHEIRO LAFAIETE obtidas
+2026-06-09 13:46:17,868 - INFO - ** Obtendo remessas EM REVISAO de CONSELHEIRO LAFAIETE
+2026-06-09 13:46:17,869 - INFO - ** Remessas EM REVISAO de CONSELHEIRO LAFAIETE obtidas
+2026-06-09 13:46:17,869 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de CONSELHEIRO LAFAIETE
+2026-06-09 13:46:17,870 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de CONSELHEIRO LAFAIETE obtidas
+2026-06-09 13:46:17,870 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de CONSELHEIRO LAFAIETE
+2026-06-09 13:46:17,871 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de CONSELHEIRO LAFAIETE obtidas
+2026-06-09 13:46:17,871 - INFO - ** Gerando .xlsx das remessas de CONSELHEIRO LAFAIETE
+2026-06-09 13:46:17,901 - INFO - ** .xlsx das remessas de CONSELHEIRO LAFAIETE gerado
+2026-06-09 13:46:17,901 - INFO - * Finalizado processamento da regional CONSELHEIRO LAFAIETE
+2026-06-09 13:46:17,902 - INFO - * Iniciando processamento da regional CONTAGEM
+2026-06-09 13:46:17,902 - INFO - ** Obtendo TODAS remessas de CONTAGEM
+2026-06-09 13:46:17,919 - INFO - **TODAS remessas de CONTAGEM obtidas
+2026-06-09 13:46:17,919 - INFO - ** Obtendo remessas EM REVISAO de CONTAGEM
+2026-06-09 13:46:17,920 - INFO - ** Remessas EM REVISAO de CONTAGEM obtidas
+2026-06-09 13:46:17,921 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de CONTAGEM
+2026-06-09 13:46:17,922 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de CONTAGEM obtidas
+2026-06-09 13:46:17,922 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de CONTAGEM
+2026-06-09 13:46:17,923 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de CONTAGEM obtidas
+2026-06-09 13:46:17,923 - INFO - ** Gerando .xlsx das remessas de CONTAGEM
+2026-06-09 13:46:17,960 - INFO - ** .xlsx das remessas de CONTAGEM gerado
+2026-06-09 13:46:17,960 - INFO - * Finalizado processamento da regional CONTAGEM
+2026-06-09 13:46:17,960 - INFO - * Iniciando processamento da regional CORONEL FABRICIANO
+2026-06-09 13:46:17,960 - INFO - ** Obtendo TODAS remessas de CORONEL FABRICIANO
+2026-06-09 13:46:17,975 - INFO - **TODAS remessas de CORONEL FABRICIANO obtidas
+2026-06-09 13:46:17,976 - INFO - ** Obtendo remessas EM REVISAO de CORONEL FABRICIANO
+2026-06-09 13:46:17,977 - INFO - ** Remessas EM REVISAO de CORONEL FABRICIANO obtidas
+2026-06-09 13:46:17,977 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de CORONEL FABRICIANO
+2026-06-09 13:46:17,977 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de CORONEL FABRICIANO obtidas
+2026-06-09 13:46:17,978 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de CORONEL FABRICIANO
+2026-06-09 13:46:17,979 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de CORONEL FABRICIANO obtidas
+2026-06-09 13:46:17,979 - INFO - ** Gerando .xlsx das remessas de CORONEL FABRICIANO
+2026-06-09 13:46:18,025 - INFO - ** .xlsx das remessas de CORONEL FABRICIANO gerado
+2026-06-09 13:46:18,025 - INFO - * Finalizado processamento da regional CORONEL FABRICIANO
+2026-06-09 13:46:18,025 - INFO - * Iniciando processamento da regional CURVELO
+2026-06-09 13:46:18,026 - INFO - ** Obtendo TODAS remessas de CURVELO
+2026-06-09 13:46:18,038 - INFO - **TODAS remessas de CURVELO obtidas
+2026-06-09 13:46:18,038 - INFO - ** Obtendo remessas EM REVISAO de CURVELO
+2026-06-09 13:46:18,039 - INFO - ** Remessas EM REVISAO de CURVELO obtidas
+2026-06-09 13:46:18,039 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de CURVELO
+2026-06-09 13:46:18,039 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de CURVELO obtidas
+2026-06-09 13:46:18,040 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de CURVELO
+2026-06-09 13:46:18,040 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de CURVELO obtidas
+2026-06-09 13:46:18,040 - INFO - ** Gerando .xlsx das remessas de CURVELO
+2026-06-09 13:46:18,066 - INFO - ** .xlsx das remessas de CURVELO gerado
+2026-06-09 13:46:18,067 - INFO - * Finalizado processamento da regional CURVELO
+2026-06-09 13:46:18,067 - INFO - * Iniciando processamento da regional DIAMANTINA
+2026-06-09 13:46:18,067 - INFO - ** Obtendo TODAS remessas de DIAMANTINA
+2026-06-09 13:46:18,081 - INFO - **TODAS remessas de DIAMANTINA obtidas
+2026-06-09 13:46:18,081 - INFO - ** Obtendo remessas EM REVISAO de DIAMANTINA
+2026-06-09 13:46:18,082 - INFO - ** Remessas EM REVISAO de DIAMANTINA obtidas
+2026-06-09 13:46:18,082 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de DIAMANTINA
+2026-06-09 13:46:18,083 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de DIAMANTINA obtidas
+2026-06-09 13:46:18,083 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de DIAMANTINA
+2026-06-09 13:46:18,084 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de DIAMANTINA obtidas
+2026-06-09 13:46:18,084 - INFO - ** Gerando .xlsx das remessas de DIAMANTINA
+2026-06-09 13:46:18,110 - INFO - ** .xlsx das remessas de DIAMANTINA gerado
+2026-06-09 13:46:18,110 - INFO - * Finalizado processamento da regional DIAMANTINA
+2026-06-09 13:46:18,110 - INFO - * Iniciando processamento da regional DIVINÓPOLIS
+2026-06-09 13:46:18,111 - INFO - ** Obtendo TODAS remessas de DIVINÓPOLIS
+2026-06-09 13:46:18,125 - INFO - **TODAS remessas de DIVINÓPOLIS obtidas
+2026-06-09 13:46:18,125 - INFO - ** Obtendo remessas EM REVISAO de DIVINÓPOLIS
+2026-06-09 13:46:18,126 - INFO - ** Remessas EM REVISAO de DIVINÓPOLIS obtidas
+2026-06-09 13:46:18,126 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de DIVINÓPOLIS
+2026-06-09 13:46:18,127 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de DIVINÓPOLIS obtidas
+2026-06-09 13:46:18,127 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de DIVINÓPOLIS
+2026-06-09 13:46:18,128 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de DIVINÓPOLIS obtidas
+2026-06-09 13:46:18,128 - INFO - ** Gerando .xlsx das remessas de DIVINÓPOLIS
+2026-06-09 13:46:18,156 - INFO - ** .xlsx das remessas de DIVINÓPOLIS gerado
+2026-06-09 13:46:18,157 - INFO - * Finalizado processamento da regional DIVINÓPOLIS
+2026-06-09 13:46:18,157 - INFO - * Iniciando processamento da regional GOVERNADOR VALADARES
+2026-06-09 13:46:18,157 - INFO - ** Obtendo TODAS remessas de GOVERNADOR VALADARES
+2026-06-09 13:46:18,171 - INFO - **TODAS remessas de GOVERNADOR VALADARES obtidas
+2026-06-09 13:46:18,172 - INFO - ** Obtendo remessas EM REVISAO de GOVERNADOR VALADARES
+2026-06-09 13:46:18,172 - INFO - ** Remessas EM REVISAO de GOVERNADOR VALADARES obtidas
+2026-06-09 13:46:18,173 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de GOVERNADOR VALADARES
+2026-06-09 13:46:18,174 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de GOVERNADOR VALADARES obtidas
+2026-06-09 13:46:18,174 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de GOVERNADOR VALADARES
+2026-06-09 13:46:18,175 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de GOVERNADOR VALADARES obtidas
+2026-06-09 13:46:18,175 - INFO - ** Gerando .xlsx das remessas de GOVERNADOR VALADARES
+2026-06-09 13:46:18,203 - INFO - ** .xlsx das remessas de GOVERNADOR VALADARES gerado
+2026-06-09 13:46:18,203 - INFO - * Finalizado processamento da regional GOVERNADOR VALADARES
+2026-06-09 13:46:18,204 - INFO - * Iniciando processamento da regional ITABIRA
+2026-06-09 13:46:18,204 - INFO - ** Obtendo TODAS remessas de ITABIRA
+2026-06-09 13:46:18,218 - INFO - **TODAS remessas de ITABIRA obtidas
+2026-06-09 13:46:18,218 - INFO - ** Obtendo remessas EM REVISAO de ITABIRA
+2026-06-09 13:46:18,219 - INFO - ** Remessas EM REVISAO de ITABIRA obtidas
+2026-06-09 13:46:18,219 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de ITABIRA
+2026-06-09 13:46:18,220 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de ITABIRA obtidas
+2026-06-09 13:46:18,220 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de ITABIRA
+2026-06-09 13:46:18,221 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de ITABIRA obtidas
+2026-06-09 13:46:18,221 - INFO - ** Gerando .xlsx das remessas de ITABIRA
+2026-06-09 13:46:18,251 - INFO - ** .xlsx das remessas de ITABIRA gerado
+2026-06-09 13:46:18,251 - INFO - * Finalizado processamento da regional ITABIRA
+2026-06-09 13:46:18,252 - INFO - * Iniciando processamento da regional ITAÚNA
+2026-06-09 13:46:18,252 - INFO - ** Obtendo TODAS remessas de ITAÚNA
+2026-06-09 13:46:18,265 - INFO - **TODAS remessas de ITAÚNA obtidas
+2026-06-09 13:46:18,266 - INFO - ** Obtendo remessas EM REVISAO de ITAÚNA
+2026-06-09 13:46:18,267 - INFO - ** Remessas EM REVISAO de ITAÚNA obtidas
+2026-06-09 13:46:18,267 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de ITAÚNA
+2026-06-09 13:46:18,268 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de ITAÚNA obtidas
+2026-06-09 13:46:18,268 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de ITAÚNA
+2026-06-09 13:46:18,269 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de ITAÚNA obtidas
+2026-06-09 13:46:18,269 - INFO - ** Gerando .xlsx das remessas de ITAÚNA
+2026-06-09 13:46:18,297 - INFO - ** .xlsx das remessas de ITAÚNA gerado
+2026-06-09 13:46:18,297 - INFO - * Finalizado processamento da regional ITAÚNA
+2026-06-09 13:46:18,298 - INFO - * Iniciando processamento da regional ITUIUTABA
+2026-06-09 13:46:18,298 - INFO - ** Obtendo TODAS remessas de ITUIUTABA
+2026-06-09 13:46:18,310 - INFO - **TODAS remessas de ITUIUTABA obtidas
+2026-06-09 13:46:18,311 - INFO - ** Obtendo remessas EM REVISAO de ITUIUTABA
+2026-06-09 13:46:18,312 - INFO - ** Remessas EM REVISAO de ITUIUTABA obtidas
+2026-06-09 13:46:18,312 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de ITUIUTABA
+2026-06-09 13:46:18,312 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de ITUIUTABA obtidas
+2026-06-09 13:46:18,313 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de ITUIUTABA
+2026-06-09 13:46:18,313 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de ITUIUTABA obtidas
+2026-06-09 13:46:18,313 - INFO - ** Gerando .xlsx das remessas de ITUIUTABA
+2026-06-09 13:46:18,348 - INFO - ** .xlsx das remessas de ITUIUTABA gerado
+2026-06-09 13:46:18,348 - INFO - * Finalizado processamento da regional ITUIUTABA
+2026-06-09 13:46:18,348 - INFO - * Iniciando processamento da regional JUIZ DE FORA
+2026-06-09 13:46:18,348 - INFO - ** Obtendo TODAS remessas de JUIZ DE FORA
+2026-06-09 13:46:18,364 - INFO - **TODAS remessas de JUIZ DE FORA obtidas
+2026-06-09 13:46:18,364 - INFO - ** Obtendo remessas EM REVISAO de JUIZ DE FORA
+2026-06-09 13:46:18,365 - INFO - ** Remessas EM REVISAO de JUIZ DE FORA obtidas
+2026-06-09 13:46:18,366 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de JUIZ DE FORA
+2026-06-09 13:46:18,367 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de JUIZ DE FORA obtidas
+2026-06-09 13:46:18,367 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de JUIZ DE FORA
+2026-06-09 13:46:18,368 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de JUIZ DE FORA obtidas
+2026-06-09 13:46:18,368 - INFO - ** Gerando .xlsx das remessas de JUIZ DE FORA
+2026-06-09 13:46:18,399 - INFO - ** .xlsx das remessas de JUIZ DE FORA gerado
+2026-06-09 13:46:18,400 - INFO - * Finalizado processamento da regional JUIZ DE FORA
+2026-06-09 13:46:18,400 - INFO - * Iniciando processamento da regional LAVRAS
+2026-06-09 13:46:18,400 - INFO - ** Obtendo TODAS remessas de LAVRAS
+2026-06-09 13:46:18,414 - INFO - **TODAS remessas de LAVRAS obtidas
+2026-06-09 13:46:18,414 - INFO - ** Obtendo remessas EM REVISAO de LAVRAS
+2026-06-09 13:46:18,415 - INFO - ** Remessas EM REVISAO de LAVRAS obtidas
+2026-06-09 13:46:18,415 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de LAVRAS
+2026-06-09 13:46:18,416 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de LAVRAS obtidas
+2026-06-09 13:46:18,416 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de LAVRAS
+2026-06-09 13:46:18,417 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de LAVRAS obtidas
+2026-06-09 13:46:18,418 - INFO - ** Gerando .xlsx das remessas de LAVRAS
+2026-06-09 13:46:18,445 - INFO - ** .xlsx das remessas de LAVRAS gerado
+2026-06-09 13:46:18,445 - INFO - * Finalizado processamento da regional LAVRAS
+2026-06-09 13:46:18,445 - INFO - * Iniciando processamento da regional MANHUAÇU
+2026-06-09 13:46:18,445 - INFO - ** Obtendo TODAS remessas de MANHUAÇU
+2026-06-09 13:46:18,459 - INFO - **TODAS remessas de MANHUAÇU obtidas
+2026-06-09 13:46:18,460 - INFO - ** Obtendo remessas EM REVISAO de MANHUAÇU
+2026-06-09 13:46:18,460 - INFO - ** Remessas EM REVISAO de MANHUAÇU obtidas
+2026-06-09 13:46:18,461 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de MANHUAÇU
+2026-06-09 13:46:18,461 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de MANHUAÇU obtidas
+2026-06-09 13:46:18,461 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de MANHUAÇU
+2026-06-09 13:46:18,462 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de MANHUAÇU obtidas
+2026-06-09 13:46:18,462 - INFO - ** Gerando .xlsx das remessas de MANHUAÇU
+2026-06-09 13:46:18,495 - INFO - ** .xlsx das remessas de MANHUAÇU gerado
+2026-06-09 13:46:18,495 - INFO - * Finalizado processamento da regional MANHUAÇU
+2026-06-09 13:46:18,496 - INFO - * Iniciando processamento da regional MONTES CLAROS
+2026-06-09 13:46:18,496 - INFO - ** Obtendo TODAS remessas de MONTES CLAROS
+2026-06-09 13:46:18,513 - INFO - **TODAS remessas de MONTES CLAROS obtidas
+2026-06-09 13:46:18,513 - INFO - ** Obtendo remessas EM REVISAO de MONTES CLAROS
+2026-06-09 13:46:18,515 - INFO - ** Remessas EM REVISAO de MONTES CLAROS obtidas
+2026-06-09 13:46:18,515 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de MONTES CLAROS
+2026-06-09 13:46:18,518 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de MONTES CLAROS obtidas
+2026-06-09 13:46:18,518 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de MONTES CLAROS
+2026-06-09 13:46:18,520 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de MONTES CLAROS obtidas
+2026-06-09 13:46:18,520 - INFO - ** Gerando .xlsx das remessas de MONTES CLAROS
+2026-06-09 13:46:18,558 - INFO - ** .xlsx das remessas de MONTES CLAROS gerado
+2026-06-09 13:46:18,558 - INFO - * Finalizado processamento da regional MONTES CLAROS
+2026-06-09 13:46:18,558 - INFO - * Iniciando processamento da regional MURIAÉ
+2026-06-09 13:46:18,559 - INFO - ** Obtendo TODAS remessas de MURIAÉ
+2026-06-09 13:46:18,578 - INFO - **TODAS remessas de MURIAÉ obtidas
+2026-06-09 13:46:18,578 - INFO - ** Obtendo remessas EM REVISAO de MURIAÉ
+2026-06-09 13:46:18,580 - INFO - ** Remessas EM REVISAO de MURIAÉ obtidas
+2026-06-09 13:46:18,580 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de MURIAÉ
+2026-06-09 13:46:18,583 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de MURIAÉ obtidas
+2026-06-09 13:46:18,583 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de MURIAÉ
+2026-06-09 13:46:18,584 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de MURIAÉ obtidas
+2026-06-09 13:46:18,585 - INFO - ** Gerando .xlsx das remessas de MURIAÉ
+2026-06-09 13:46:18,620 - INFO - ** .xlsx das remessas de MURIAÉ gerado
+2026-06-09 13:46:18,621 - INFO - * Finalizado processamento da regional MURIAÉ
+2026-06-09 13:46:18,621 - INFO - * Iniciando processamento da regional OLIVEIRA
+2026-06-09 13:46:18,621 - INFO - ** Obtendo TODAS remessas de OLIVEIRA
+2026-06-09 13:46:18,637 - INFO - **TODAS remessas de OLIVEIRA obtidas
+2026-06-09 13:46:18,637 - INFO - ** Obtendo remessas EM REVISAO de OLIVEIRA
+2026-06-09 13:46:18,638 - INFO - ** Remessas EM REVISAO de OLIVEIRA obtidas
+2026-06-09 13:46:18,638 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de OLIVEIRA
+2026-06-09 13:46:18,639 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de OLIVEIRA obtidas
+2026-06-09 13:46:18,639 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de OLIVEIRA
+2026-06-09 13:46:18,640 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de OLIVEIRA obtidas
+2026-06-09 13:46:18,640 - INFO - ** Gerando .xlsx das remessas de OLIVEIRA
+2026-06-09 13:46:18,670 - INFO - ** .xlsx das remessas de OLIVEIRA gerado
+2026-06-09 13:46:18,671 - INFO - * Finalizado processamento da regional OLIVEIRA
+2026-06-09 13:46:18,671 - INFO - * Iniciando processamento da regional PARACATU
+2026-06-09 13:46:18,671 - INFO - ** Obtendo TODAS remessas de PARACATU
+2026-06-09 13:46:18,684 - INFO - **TODAS remessas de PARACATU obtidas
+2026-06-09 13:46:18,684 - INFO - ** Obtendo remessas EM REVISAO de PARACATU
+2026-06-09 13:46:18,685 - INFO - ** Remessas EM REVISAO de PARACATU obtidas
+2026-06-09 13:46:18,685 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de PARACATU
+2026-06-09 13:46:18,686 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de PARACATU obtidas
+2026-06-09 13:46:18,686 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de PARACATU
+2026-06-09 13:46:18,687 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de PARACATU obtidas
+2026-06-09 13:46:18,687 - INFO - ** Gerando .xlsx das remessas de PARACATU
+2026-06-09 13:46:18,715 - INFO - ** .xlsx das remessas de PARACATU gerado
+2026-06-09 13:46:18,715 - INFO - * Finalizado processamento da regional PARACATU
+2026-06-09 13:46:18,715 - INFO - * Iniciando processamento da regional PASSOS
+2026-06-09 13:46:18,716 - INFO - ** Obtendo TODAS remessas de PASSOS
+2026-06-09 13:46:18,731 - INFO - **TODAS remessas de PASSOS obtidas
+2026-06-09 13:46:18,731 - INFO - ** Obtendo remessas EM REVISAO de PASSOS
+2026-06-09 13:46:18,732 - INFO - ** Remessas EM REVISAO de PASSOS obtidas
+2026-06-09 13:46:18,732 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de PASSOS
+2026-06-09 13:46:18,733 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de PASSOS obtidas
+2026-06-09 13:46:18,733 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de PASSOS
+2026-06-09 13:46:18,734 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de PASSOS obtidas
+2026-06-09 13:46:18,735 - INFO - ** Gerando .xlsx das remessas de PASSOS
+2026-06-09 13:46:18,769 - INFO - ** .xlsx das remessas de PASSOS gerado
+2026-06-09 13:46:18,769 - INFO - * Finalizado processamento da regional PASSOS
+2026-06-09 13:46:18,769 - INFO - * Iniciando processamento da regional PATOS DE MINAS
+2026-06-09 13:46:18,769 - INFO - ** Obtendo TODAS remessas de PATOS DE MINAS
+2026-06-09 13:46:18,783 - INFO - **TODAS remessas de PATOS DE MINAS obtidas
+2026-06-09 13:46:18,783 - INFO - ** Obtendo remessas EM REVISAO de PATOS DE MINAS
+2026-06-09 13:46:18,784 - INFO - ** Remessas EM REVISAO de PATOS DE MINAS obtidas
+2026-06-09 13:46:18,785 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de PATOS DE MINAS
+2026-06-09 13:46:18,785 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de PATOS DE MINAS obtidas
+2026-06-09 13:46:18,785 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de PATOS DE MINAS
+2026-06-09 13:46:18,786 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de PATOS DE MINAS obtidas
+2026-06-09 13:46:18,786 - INFO - ** Gerando .xlsx das remessas de PATOS DE MINAS
+2026-06-09 13:46:18,815 - INFO - ** .xlsx das remessas de PATOS DE MINAS gerado
+2026-06-09 13:46:18,816 - INFO - * Finalizado processamento da regional PATOS DE MINAS
+2026-06-09 13:46:18,816 - INFO - * Iniciando processamento da regional PEDRO LEOPOLDO
+2026-06-09 13:46:18,816 - INFO - ** Obtendo TODAS remessas de PEDRO LEOPOLDO
+2026-06-09 13:46:18,829 - INFO - **TODAS remessas de PEDRO LEOPOLDO obtidas
+2026-06-09 13:46:18,830 - INFO - ** Obtendo remessas EM REVISAO de PEDRO LEOPOLDO
+2026-06-09 13:46:18,830 - INFO - ** Remessas EM REVISAO de PEDRO LEOPOLDO obtidas
+2026-06-09 13:46:18,831 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de PEDRO LEOPOLDO
+2026-06-09 13:46:18,831 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de PEDRO LEOPOLDO obtidas
+2026-06-09 13:46:18,831 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de PEDRO LEOPOLDO
+2026-06-09 13:46:18,832 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de PEDRO LEOPOLDO obtidas
+2026-06-09 13:46:18,833 - INFO - ** Gerando .xlsx das remessas de PEDRO LEOPOLDO
+2026-06-09 13:46:18,867 - INFO - ** .xlsx das remessas de PEDRO LEOPOLDO gerado
+2026-06-09 13:46:18,867 - INFO - * Finalizado processamento da regional PEDRO LEOPOLDO
+2026-06-09 13:46:18,868 - INFO - * Iniciando processamento da regional POÇOS DE CALDAS
+2026-06-09 13:46:18,868 - INFO - ** Obtendo TODAS remessas de POÇOS DE CALDAS
+2026-06-09 13:46:18,882 - INFO - **TODAS remessas de POÇOS DE CALDAS obtidas
+2026-06-09 13:46:18,882 - INFO - ** Obtendo remessas EM REVISAO de POÇOS DE CALDAS
+2026-06-09 13:46:18,883 - INFO - ** Remessas EM REVISAO de POÇOS DE CALDAS obtidas
+2026-06-09 13:46:18,883 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de POÇOS DE CALDAS
+2026-06-09 13:46:18,884 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de POÇOS DE CALDAS obtidas
+2026-06-09 13:46:18,884 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de POÇOS DE CALDAS
+2026-06-09 13:46:18,885 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de POÇOS DE CALDAS obtidas
+2026-06-09 13:46:18,885 - INFO - ** Gerando .xlsx das remessas de POÇOS DE CALDAS
+2026-06-09 13:46:18,916 - INFO - ** .xlsx das remessas de POÇOS DE CALDAS gerado
+2026-06-09 13:46:18,916 - INFO - * Finalizado processamento da regional POÇOS DE CALDAS
+2026-06-09 13:46:18,917 - INFO - * Iniciando processamento da regional PONTE NOVA
+2026-06-09 13:46:18,917 - INFO - ** Obtendo TODAS remessas de PONTE NOVA
+2026-06-09 13:46:18,932 - INFO - **TODAS remessas de PONTE NOVA obtidas
+2026-06-09 13:46:18,932 - INFO - ** Obtendo remessas EM REVISAO de PONTE NOVA
+2026-06-09 13:46:18,933 - INFO - ** Remessas EM REVISAO de PONTE NOVA obtidas
+2026-06-09 13:46:18,933 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de PONTE NOVA
+2026-06-09 13:46:18,934 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de PONTE NOVA obtidas
+2026-06-09 13:46:18,934 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de PONTE NOVA
+2026-06-09 13:46:18,935 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de PONTE NOVA obtidas
+2026-06-09 13:46:18,935 - INFO - ** Gerando .xlsx das remessas de PONTE NOVA
+2026-06-09 13:46:18,973 - INFO - ** .xlsx das remessas de PONTE NOVA gerado
+2026-06-09 13:46:18,974 - INFO - * Finalizado processamento da regional PONTE NOVA
+2026-06-09 13:46:18,974 - INFO - * Iniciando processamento da regional POUSO ALEGRE
+2026-06-09 13:46:18,974 - INFO - ** Obtendo TODAS remessas de POUSO ALEGRE
+2026-06-09 13:46:18,989 - INFO - **TODAS remessas de POUSO ALEGRE obtidas
+2026-06-09 13:46:18,990 - INFO - ** Obtendo remessas EM REVISAO de POUSO ALEGRE
+2026-06-09 13:46:18,991 - INFO - ** Remessas EM REVISAO de POUSO ALEGRE obtidas
+2026-06-09 13:46:18,991 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de POUSO ALEGRE
+2026-06-09 13:46:18,992 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de POUSO ALEGRE obtidas
+2026-06-09 13:46:18,992 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de POUSO ALEGRE
+2026-06-09 13:46:18,993 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de POUSO ALEGRE obtidas
+2026-06-09 13:46:18,993 - INFO - ** Gerando .xlsx das remessas de POUSO ALEGRE
+2026-06-09 13:46:19,038 - INFO - ** .xlsx das remessas de POUSO ALEGRE gerado
+2026-06-09 13:46:19,039 - INFO - * Finalizado processamento da regional POUSO ALEGRE
+2026-06-09 13:46:19,039 - INFO - * Iniciando processamento da regional SALINAS
+2026-06-09 13:46:19,039 - INFO - ** Obtendo TODAS remessas de SALINAS
+2026-06-09 13:46:19,054 - INFO - **TODAS remessas de SALINAS obtidas
+2026-06-09 13:46:19,054 - INFO - ** Obtendo remessas EM REVISAO de SALINAS
+2026-06-09 13:46:19,055 - INFO - ** Remessas EM REVISAO de SALINAS obtidas
+2026-06-09 13:46:19,055 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de SALINAS
+2026-06-09 13:46:19,056 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de SALINAS obtidas
+2026-06-09 13:46:19,056 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de SALINAS
+2026-06-09 13:46:19,057 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de SALINAS obtidas
+2026-06-09 13:46:19,057 - INFO - ** Gerando .xlsx das remessas de SALINAS
+2026-06-09 13:46:19,086 - INFO - ** .xlsx das remessas de SALINAS gerado
+2026-06-09 13:46:19,086 - INFO - * Finalizado processamento da regional SALINAS
+2026-06-09 13:46:19,086 - INFO - * Iniciando processamento da regional SAO JOAO DEL REI
+2026-06-09 13:46:19,086 - INFO - ** Obtendo TODAS remessas de SAO JOAO DEL REI
+2026-06-09 13:46:19,100 - INFO - **TODAS remessas de SAO JOAO DEL REI obtidas
+2026-06-09 13:46:19,100 - INFO - ** Obtendo remessas EM REVISAO de SAO JOAO DEL REI
+2026-06-09 13:46:19,101 - INFO - ** Remessas EM REVISAO de SAO JOAO DEL REI obtidas
+2026-06-09 13:46:19,101 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de SAO JOAO DEL REI
+2026-06-09 13:46:19,102 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de SAO JOAO DEL REI obtidas
+2026-06-09 13:46:19,102 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de SAO JOAO DEL REI
+2026-06-09 13:46:19,103 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de SAO JOAO DEL REI obtidas
+2026-06-09 13:46:19,103 - INFO - ** Gerando .xlsx das remessas de SAO JOAO DEL REI
+2026-06-09 13:46:19,132 - INFO - ** .xlsx das remessas de SAO JOAO DEL REI gerado
+2026-06-09 13:46:19,132 - INFO - * Finalizado processamento da regional SAO JOAO DEL REI
+2026-06-09 13:46:19,132 - INFO - * Iniciando processamento da regional SETE LAGOAS
+2026-06-09 13:46:19,132 - INFO - ** Obtendo TODAS remessas de SETE LAGOAS
+2026-06-09 13:46:19,145 - INFO - **TODAS remessas de SETE LAGOAS obtidas
+2026-06-09 13:46:19,146 - INFO - ** Obtendo remessas EM REVISAO de SETE LAGOAS
+2026-06-09 13:46:19,146 - INFO - ** Remessas EM REVISAO de SETE LAGOAS obtidas
+2026-06-09 13:46:19,147 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de SETE LAGOAS
+2026-06-09 13:46:19,147 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de SETE LAGOAS obtidas
+2026-06-09 13:46:19,148 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de SETE LAGOAS
+2026-06-09 13:46:19,148 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de SETE LAGOAS obtidas
+2026-06-09 13:46:19,148 - INFO - ** Gerando .xlsx das remessas de SETE LAGOAS
+2026-06-09 13:46:19,177 - INFO - ** .xlsx das remessas de SETE LAGOAS gerado
+2026-06-09 13:46:19,177 - INFO - * Finalizado processamento da regional SETE LAGOAS
+2026-06-09 13:46:19,177 - INFO - * Iniciando processamento da regional TEÓFILO OTONI
+2026-06-09 13:46:19,177 - INFO - ** Obtendo TODAS remessas de TEÓFILO OTONI
+2026-06-09 13:46:19,192 - INFO - **TODAS remessas de TEÓFILO OTONI obtidas
+2026-06-09 13:46:19,192 - INFO - ** Obtendo remessas EM REVISAO de TEÓFILO OTONI
+2026-06-09 13:46:19,193 - INFO - ** Remessas EM REVISAO de TEÓFILO OTONI obtidas
+2026-06-09 13:46:19,193 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de TEÓFILO OTONI
+2026-06-09 13:46:19,194 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de TEÓFILO OTONI obtidas
+2026-06-09 13:46:19,194 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de TEÓFILO OTONI
+2026-06-09 13:46:19,195 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de TEÓFILO OTONI obtidas
+2026-06-09 13:46:19,195 - INFO - ** Gerando .xlsx das remessas de TEÓFILO OTONI
+2026-06-09 13:46:19,228 - INFO - ** .xlsx das remessas de TEÓFILO OTONI gerado
+2026-06-09 13:46:19,228 - INFO - * Finalizado processamento da regional TEÓFILO OTONI
+2026-06-09 13:46:19,229 - INFO - * Iniciando processamento da regional UBÁ
+2026-06-09 13:46:19,229 - INFO - ** Obtendo TODAS remessas de UBÁ
+2026-06-09 13:46:19,243 - INFO - **TODAS remessas de UBÁ obtidas
+2026-06-09 13:46:19,244 - INFO - ** Obtendo remessas EM REVISAO de UBÁ
+2026-06-09 13:46:19,244 - INFO - ** Remessas EM REVISAO de UBÁ obtidas
+2026-06-09 13:46:19,245 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de UBÁ
+2026-06-09 13:46:19,245 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de UBÁ obtidas
+2026-06-09 13:46:19,246 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de UBÁ
+2026-06-09 13:46:19,246 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de UBÁ obtidas
+2026-06-09 13:46:19,247 - INFO - ** Gerando .xlsx das remessas de UBÁ
+2026-06-09 13:46:19,277 - INFO - ** .xlsx das remessas de UBÁ gerado
+2026-06-09 13:46:19,277 - INFO - * Finalizado processamento da regional UBÁ
+2026-06-09 13:46:19,278 - INFO - * Iniciando processamento da regional UBERABA
+2026-06-09 13:46:19,278 - INFO - ** Obtendo TODAS remessas de UBERABA
+2026-06-09 13:46:19,293 - INFO - **TODAS remessas de UBERABA obtidas
+2026-06-09 13:46:19,293 - INFO - ** Obtendo remessas EM REVISAO de UBERABA
+2026-06-09 13:46:19,294 - INFO - ** Remessas EM REVISAO de UBERABA obtidas
+2026-06-09 13:46:19,294 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de UBERABA
+2026-06-09 13:46:19,295 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de UBERABA obtidas
+2026-06-09 13:46:19,295 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de UBERABA
+2026-06-09 13:46:19,296 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de UBERABA obtidas
+2026-06-09 13:46:19,296 - INFO - ** Gerando .xlsx das remessas de UBERABA
+2026-06-09 13:46:19,329 - INFO - ** .xlsx das remessas de UBERABA gerado
+2026-06-09 13:46:19,329 - INFO - * Finalizado processamento da regional UBERABA
+2026-06-09 13:46:19,330 - INFO - * Iniciando processamento da regional UBERLANDIA
+2026-06-09 13:46:19,330 - INFO - ** Obtendo TODAS remessas de UBERLANDIA
+2026-06-09 13:46:19,349 - INFO - **TODAS remessas de UBERLANDIA obtidas
+2026-06-09 13:46:19,349 - INFO - ** Obtendo remessas EM REVISAO de UBERLANDIA
+2026-06-09 13:46:19,351 - INFO - ** Remessas EM REVISAO de UBERLANDIA obtidas
+2026-06-09 13:46:19,352 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de UBERLANDIA
+2026-06-09 13:46:19,353 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de UBERLANDIA obtidas
+2026-06-09 13:46:19,353 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de UBERLANDIA
+2026-06-09 13:46:19,355 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de UBERLANDIA obtidas
+2026-06-09 13:46:19,355 - INFO - ** Gerando .xlsx das remessas de UBERLANDIA
+2026-06-09 13:46:19,439 - INFO - ** .xlsx das remessas de UBERLANDIA gerado
+2026-06-09 13:46:19,439 - INFO - * Finalizado processamento da regional UBERLANDIA
+2026-06-09 13:46:19,440 - INFO - * Iniciando processamento da regional VARGINHA
+2026-06-09 13:46:19,440 - INFO - ** Obtendo TODAS remessas de VARGINHA
+2026-06-09 13:46:19,456 - INFO - **TODAS remessas de VARGINHA obtidas
+2026-06-09 13:46:19,457 - INFO - ** Obtendo remessas EM REVISAO de VARGINHA
+2026-06-09 13:46:19,458 - INFO - ** Remessas EM REVISAO de VARGINHA obtidas
+2026-06-09 13:46:19,458 - INFO - ** Obtendo remessas LIBERADO PARA PAGAMENTO de VARGINHA
+2026-06-09 13:46:19,459 - INFO - ** Remessas LIBERADO PARA PAGAMENTO de VARGINHA obtidas
+2026-06-09 13:46:19,459 - INFO - ** Obtendo remessas PAGAMENTO PROCESSADO comVL_PAGAR zerado de VARGINHA
+2026-06-09 13:46:19,460 - INFO - ** Remessas PAGAMENTO PROCESSADO com VL_PAGAR zerado de VARGINHA obtidas
+2026-06-09 13:46:19,460 - INFO - ** Gerando .xlsx das remessas de VARGINHA
+2026-06-09 13:46:19,488 - INFO - ** .xlsx das remessas de VARGINHA gerado
+2026-06-09 13:46:19,488 - INFO - * Finalizado processamento da regional VARGINHA
+2026-06-09 13:46:19,489 - INFO - Finalizado processamento de cada regional

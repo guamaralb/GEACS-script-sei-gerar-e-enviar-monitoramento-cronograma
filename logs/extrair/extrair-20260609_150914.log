@@ -1,0 +1,13 @@
+2026-06-09 15:09:15,814 - INFO - FFE_2022 carregado: 88142 linhas
+2026-06-09 15:09:17,120 - INFO - FFE_2023 carregado: 95352 linhas
+2026-06-09 15:09:18,260 - INFO - FFE_2024 carregado: 82814 linhas
+2026-06-09 15:09:19,528 - INFO - FFE_2025 carregado: 91888 linhas
+2026-06-09 15:09:20,122 - INFO - FFE_2026 carregado: 42220 linhas
+2026-06-09 15:09:20,165 - INFO - FFEs concatenados: 400416 linhas no total
+2026-06-09 15:09:21,796 - INFO - Filtro aplicado: 293283/400416 linhas retidas (PJ, 2022/01-2025/12)
+2026-06-09 15:10:18,374 - INFO - FFEs completos salvos: ffes_completos-2026_06_09.xlsx (293283 linhas)
+2026-06-09 15:10:18,415 - INFO - EM CADASTRAMENTO salvo: remessas_em_cadastramento-2026_06_09.xlsx (5 linhas)
+2026-06-09 15:10:18,472 - INFO - PAG. PROCESSADO zerado salvo: remessas_pag_processado_zeradas-2026_06_09.xlsx (94 linhas)
+2026-06-09 15:10:18,508 - INFO - Monitoramento: EM REVISAO=637 | LIBERADO PAG=143 | PAG PROC ZERADO=94
+2026-06-09 15:10:18,577 - INFO - Monitoramento consolidado salvo: monitoramento-2026_06_09.xlsx (874 linhas)
+2026-06-09 15:10:18,722 - INFO - Gerando arquivos por regional (38 regionais)
