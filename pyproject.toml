@@ -18,6 +18,9 @@ weasyprint = "^68.1"
 reportlab = "^4.4.10"
 sei-automacao = { develop = true, path = "../../../sei-automacao" }
 xlsxwriter = "^3.2.9"
+impyla = "^0.23.0"
+jaydebeapi = "^1.2.3"
+pyodbc = "^5.3.0"
 
 [tool.poetry.group.dev.dependencies]
 taskipy = "^1.14.1"
@@ -46,5 +49,5 @@ pre_format = {cmd = 'poetry run ruff check --fix'}
 format = {cmd = 'poetry run ruff format'}
 pre_run_enviar = {cmd = "poetry run task format"}
 pre_run_extrair = {cmd = "poetry run task format"}
-run_extrair = {cmd = "poetry run python script_sei_envia_monit_cronograma/main_extrair.py"}
+run_extrair = {cmd = "poetry run python script_sei_envia_monit_cronograma/main_extrair_dl.py"}
 run_enviar = {cmd = "poetry run python script_sei_envia_monit_cronograma/main_enviar.py"}
