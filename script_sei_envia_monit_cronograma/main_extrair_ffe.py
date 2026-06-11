@@ -23,10 +23,10 @@ DIR_REDE_FFE = Path('H:/Sisso-Arquivos/Estatistica')
 ARQ_LOG = DIR_LOGS / f'extrair-{AGORA}.log'
 ARQ_FFE_COMPLETO = DIR_DADOS_GERAL / f'ffes_completos-{HOJE}.xlsx'
 ARQ_REM_EM_CADASTRAMENTO = (
-    DIR_DADOS_GERAL / f'remessas_em_cadastramento-{HOJE}.xlsx'
+    DIR_DADOS_GERAL / f'remessas_em_cadastramento-ffe-{HOJE}.xlsx'
 )
 ARQ_REM_PAG_PROCESSADO = (
-    DIR_DADOS_GERAL / f'remessas_pag_processado_zeradas-{HOJE}.xlsx'
+    DIR_DADOS_GERAL / f'remessas_pag_processado_zeradas-ffe-{HOJE}.xlsx'
 )
 ARQ_MONITORAMENTO = DIR_DADOS_GERAL / f'monitoramento-{HOJE}.xlsx'
 ARQ_CONTATOS_REGIONAIS = DIR_DADOS_INPUTS / 'Contatos Regionais.xlsx'
@@ -54,6 +54,7 @@ _COLS_MONIT = [
     'RAMO_ATIVIDADE',
     'MES_REFERENCIA',
     'NUM_REMESSA',
+    'VALOR_PAGAR',
 ]
 
 
@@ -114,6 +115,7 @@ def gerar_df_ffes_completo(ano_ini: int, ano_final: int) -> pd.DataFrame:
             (df_ffe_completo['MES_REFERENCIA'] >= '2022/01')
             & (df_ffe_completo['MES_REFERENCIA'] <= '2025/12')
         )
+        & (df_ffe_completo['SITUACAO'] != 'PAGAMENTO EFETUADO')
     ]
     logger.info(
         'Filtro aplicado: %d/%d linhas retidas (PJ, 2022/01-2025/12)',
@@ -195,7 +197,9 @@ def main() -> None:
     for _, reg in df_regionais.iterrows():
         municipio = reg['MUNICIPIO']
         nome_ffe = reg['UNIDADE_REGIONAL_FFE']
-        arq_rem_regional = DIR_DADOS_REGS / f'remessas-{municipio}-{HOJE}.xlsx'
+        arq_rem_regional = (
+            DIR_DADOS_REGS / f'remessas-ffe-{municipio}-{HOJE}.xlsx'
+        )
 
         salvar_xlsx_por_abas(
             {

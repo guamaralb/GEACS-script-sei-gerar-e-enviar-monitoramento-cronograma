@@ -47,7 +47,12 @@ build-backend = "poetry.core.masonry.api"
 lint = {cmd = 'poetry run ruff check'}
 pre_format = {cmd = 'poetry run ruff check --fix'}
 format = {cmd = 'poetry run ruff format'}
+
+pre_run_extrair_dl = {cmd = "poetry run task format"}
+run_extrair_dl = {cmd = "poetry run python script_sei_envia_monit_cronograma/main_extrair_dl.py"}
+
+pre_run_extrair_ffe = {cmd = "poetry run task format"}
+run_extrair_ffe = {cmd = "poetry run python script_sei_envia_monit_cronograma/main_extrair_ffe.py"}
+
 pre_run_enviar = {cmd = "poetry run task format"}
-pre_run_extrair = {cmd = "poetry run task format"}
-run_extrair = {cmd = "poetry run python script_sei_envia_monit_cronograma/main_extrair_dl.py"}
 run_enviar = {cmd = "poetry run python script_sei_envia_monit_cronograma/main_enviar.py"}

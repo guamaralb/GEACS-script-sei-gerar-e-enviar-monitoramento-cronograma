@@ -7,19 +7,15 @@ from time import sleep
 
 import pandas as pd
 from dotenv import load_dotenv
-from sei_automacao.acoes_completas.processo import incluir_doc_externo
-from sei_automacao.driver.iniciar_driver import iniciar_driver
-from sei_automacao.genericos.botoes import clicar_salvar_btnSalvar
-from sei_automacao.inicio.efetuar_login import efetuar_login
-from sei_automacao.menu.abrir_menu import abrir_menu
-from sei_automacao.menu.iniciar_processo import (
-    clicar_iniciar_processo,
-    preencher_especificacao_processo,
-    selecionar_tipo_processo,
+from sei_automacao.acoes_completas.processo import (
+    enviar_email,
 )
+
+# from sei_automacao.acoes_completas.processo import incluir_doc_externo
+from sei_automacao.driver.iniciar_driver import iniciar_driver
+from sei_automacao.inicio.efetuar_login import efetuar_login
 from sei_automacao.ubiquo.acessar_processo import acessar_processo
-from sei_automacao.utils.selecionar_nivel_acesso import selecionar_nivel_acesso
-from sei_automacao.utils.trocar_iframe import trocar_iframe
+from txt_email import gerar_assunto_email, gerar_corpo_email
 
 load_dotenv()
 
@@ -37,7 +33,7 @@ DIR_DADOS = DIR_BASE / 'dados'
 DIR_LOGS = DIR_BASE / 'logs' / 'enviar'
 
 DIR_DADOS_INPUTS = DIR_DADOS / 'inputs'
-DIR_DADOS_REGS = DIR_DADOS / 'regionais'
+DIR_DADOS_REGS = DIR_DADOS / 'dl' / 'regionais'
 
 DIR_REDE_FFE = Path('H:/Sisso-Arquivos/Estatistica')
 
@@ -57,7 +53,7 @@ logger = logging.getLogger(__name__)
 
 
 def main() -> None:
-    driver = iniciar_driver()
+    driver = iniciar_driver(driver_type='edge')
 
     driver.maximize_window()
     driver.get('https://www.sei.mg.gov.br')
@@ -65,7 +61,7 @@ def main() -> None:
     efetuar_login(driver, SEI_LOGIN, SEI_SENHA, SEI_ORGAO)
     sleep(2)
 
-    acessar_processo(driver, num_processo='2010.01.0054229/2026-05')
+    acessar_processo(driver, num_processo='2010.01.0055691/2026-10')
 
     sleep(1)
 
@@ -76,38 +72,63 @@ def main() -> None:
         'Gerando processos por regional (%d regionais)', len(df_regionais)
     )
 
+    path_anexo_pdf = (
+        DIR_DADOS_INPUTS / 'Orientações por situação da remessa - '
+        '2026 (Em revisão, Liberado e Pag. Processado Zerado).pdf'
+    )
+
     for _, reg in df_regionais.iterrows():
         municipio = reg['MUNICIPIO']
-        arq_rem_regional = DIR_DADOS_REGS / f'remessas-{municipio}-{HOJE}.xlsx'
-        espec_processo = (
-            f'TESTE - Monitoramento de Cronograma - Regional de {municipio}'
+        email_regional = reg['EMAIL_UNIDADE_REGIONAL']
+
+        path_arq_rem_regional = (
+            DIR_DADOS_REGS / f'remessas-{municipio}-{HOJE}.xlsx'
         )
 
-        abrir_menu(driver)
-        sleep(1)
-        clicar_iniciar_processo(driver)
-        sleep(1)
-        selecionar_tipo_processo(
-            driver,
-            tipo_processo='Pedidos, Oferecimentos e Informações Diversas',
-        )
-        sleep(1)
-        preencher_especificacao_processo(driver, especificacao=espec_processo)
-        selecionar_nivel_acesso(driver, nivel_acesso='Público')
-        clicar_salvar_btnSalvar(driver)
-        trocar_iframe(driver, iframe='ifrConteudoVisualizacao')
-        incluir_doc_externo(
-            driver,
-            tipo_doc='Planilha',
-            num='',
-            formato='Nato-digital',
-            data='09/06/2026',
-            caminho_anexo=arq_rem_regional,
+        acessar_processo(driver, num_processo='2010.01.0055691/2026-10')
+
+        # espec_processo = (
+        #     f'TESTE - Monitoramento de Cronograma - Regional de {municipio}'
+        # )
+
+        # iniciar_processo(
+        #     driver,
+        #     tipo_processo='Pedidos, Oferecimentos e Informações Diversas',
+        #     especificacao=espec_processo,
+        #     nivel_acesso='Público',
+        # )
+        # incluir_doc_externo(
+        #     driver,
+        #     tipo_doc='Planilha',
+        #     num=path_arq_rem_regional.name + AGORA,
+        #     formato='Nato-digital',
+        #     data='09/06/2026',
+        #     path_anexo=path_arq_rem_regional,
+        #     nivel_acesso='Público',
+        # )
+        # incluir_doc_externo(
+        #     driver,
+        #     tipo_doc='PDF',
+        #     num='Orientações por situação da remessa - 2026',
+        #     formato='Nato-digital',
+        #     data='09/06/2026',
+        #     path_anexo=path_anexo_pdf,
+        #     nivel_acesso='Público',
+        #     fecha_alerta=True,
+        # )
+        enviar_email(
+            driver=driver,
+            email_de='IPSEMG/GEACS <faturamento.pagamento@ipsemg.mg.gov.br>',
+            emails_para=[email_regional],
+            assunto=gerar_assunto_email(),
+            corpo_email=gerar_corpo_email(
+                municipio=municipio, nome_anexo_pdf=path_anexo_pdf.name
+            ),
             nivel_acesso='Público',
         )
-
-        sleep(100)
-        logger.info('Regional %s: %s gerado', municipio, arq_rem_regional.name)
+        logger.info(
+            'Regional %s: %s gerado', municipio, path_arq_rem_regional.name
+        )
 
     logger.info('Processamento concluído')
 
