@@ -53,7 +53,8 @@ def path_vpb(ano: int) -> Path:
 
 
 _COLS_FFE = [
-    'UNIDADE_REGIONALMUNICIPIO',
+    'UNIDADE_REGIONAL',
+    'MUNICIPIO',
     'COD_PESSOA_PRESTADOR',
     'NOME_PRESTADOR',
     'RAMO_ATIVIDADE',
@@ -192,17 +193,18 @@ def gerar_df_ffes_vpbs_completo(ano_ini: int, ano_final: int) -> pd.DataFrame:
     )
 
     total = len(df_vpb_completo)
+    _ref_dt = pd.to_datetime(
+        df_vpb_completo['REFERENCIA_FATURA'], format='%m/%Y', errors='coerce'
+    )
     df_vpb_completo_filtrado = df_vpb_completo[
         (df_vpb_completo['TIPO_CONTRATO'] == 'CREDPJ')
-        & (
-            (df_vpb_completo['REFERENCIA_FATURA'] >= '2022/01')
-            & (df_vpb_completo['REFERENCIA_FATURA'] <= '2025/12')
-        )
-        & (df_vpb_completo['DAT_REAL_PAGTO'] is None)
+        & (_ref_dt >= '2022-01-01')
+        & (_ref_dt <= '2025-12-01')
+        & df_vpb_completo['DAT_REAL_PAGTO'].isna()
     ]
     logger.info(
         'VPB: Filtro aplicado: %d/%d linhas retidas (PJ, 2022/01-2025/12)',
-        len(df_vpb_completo),
+        len(df_vpb_completo_filtrado),
         total,
     )
 
@@ -210,23 +212,30 @@ def gerar_df_ffes_vpbs_completo(ano_ini: int, ano_final: int) -> pd.DataFrame:
 
 
 def main() -> None:
-    df_ffes, df_vpbs = gerar_df_ffes_vpbs_completo(2022, 2026)
+    if ARQ_FFE_COMPLETO.exists() and ARQ_VPB_COMPLETO.exists():
+        logger.info(
+            'Arquivos já existem, pulando extração: %s | %s',
+            ARQ_FFE_COMPLETO.name,
+            ARQ_VPB_COMPLETO.name,
+        )
+        df_ffes = pd.read_excel(ARQ_FFE_COMPLETO, engine='openpyxl')
+        df_vpbs = pd.read_excel(ARQ_VPB_COMPLETO, engine='openpyxl')
+    else:
+        df_ffes, df_vpbs = gerar_df_ffes_vpbs_completo(2022, 2026)
 
-    ##################################################
+        df_ffes.to_excel(ARQ_FFE_COMPLETO, index=False, engine='xlsxwriter')
+        logger.info(
+            'FFEs completos salvos: %s (%d linhas)',
+            ARQ_FFE_COMPLETO.name,
+            len(df_ffes),
+        )
 
-    df_ffes.to_excel(ARQ_FFE_COMPLETO, index=False, engine='xlsxwriter')
-    logger.info(
-        'FFEs completos salvos: %s (%d linhas)',
-        ARQ_FFE_COMPLETO.name,
-        len(df_ffes),
-    )
-
-    df_vpbs.to_excel(ARQ_VPB_COMPLETO, index=False, engine='xlsxwriter')
-    logger.info(
-        'VPBs completos salvos: %s (%d linhas)',
-        ARQ_VPB_COMPLETO.name,
-        len(df_vpbs),
-    )
+        df_vpbs.to_excel(ARQ_VPB_COMPLETO, index=False, engine='xlsxwriter')
+        logger.info(
+            'VPBs completos salvos: %s (%d linhas)',
+            ARQ_VPB_COMPLETO.name,
+            len(df_vpbs),
+        )
 
     ##################################################
 
@@ -242,11 +251,8 @@ def main() -> None:
         len(df_rem_em_cadastramento),
     )
 
-    df_vpb_agregado_por_rb = agregar_por_rb(df_vpbs)
-
-    df_rb_pag_processado_vl_zerado = df_vpb_agregado_por_rb[
-        (df_vpb_agregado_por_rb['DAT_PROCESSAMENTO'] is not None)
-        & (df_vpb_agregado_por_rb['VALOR_PAGAR'] == 0)
+    df_rb_pag_processado_vl_zerado = df_vpbs[
+        df_vpbs['DAT_PROCESSAMENTO'].notna() & (df_vpbs['VAL_PAGAR'] == 0)
     ]
     df_rb_pag_processado_vl_zerado.to_excel(
         ARQ_RB_PAG_PROCESSADO_ZERADO, index=False, engine='xlsxwriter'
@@ -298,7 +304,9 @@ def main() -> None:
     for _, reg in df_regionais.iterrows():
         municipio = reg['MUNICIPIO']
         nome_ffe = reg['UNIDADE_REGIONAL_FFE']
-        arq_rem_regional = DIR_DADOS_REGS / f'rem-ffe-{municipio}-{HOJE}.xlsx'
+        arq_rem_regional = (
+            DIR_DADOS_REGS / f'rem-ffe_vpb-{municipio}-{HOJE}.xlsx'
+        )
 
         salvar_xlsx_por_abas(
             {
