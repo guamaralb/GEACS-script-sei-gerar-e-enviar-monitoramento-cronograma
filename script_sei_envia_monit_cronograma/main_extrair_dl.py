@@ -9,7 +9,6 @@ import pandas as pd
 sys.stdout.reconfigure(encoding='utf-8')
 
 HOJE = datetime.now().strftime('%Y_%m_%d')
-HOJE_DBEAVER = datetime.now().strftime('%Y%m%d')
 AGORA = datetime.now().strftime('%Y%m%d_%H%M%S')
 
 DIR_BASE = Path(__file__).resolve().parent.parent
@@ -23,12 +22,12 @@ DIR_DADOS_GERAL = DIR_DADOS / 'dl' / 'geral'
 
 
 ARQ_LOG = DIR_LOGS / f'extrair-{AGORA}.log'
-ARQ_COMPLETO = DIR_DADOS_GERAL / f'dl_completo-{HOJE_DBEAVER}.csv'
+ARQ_COMPLETO = DIR_DADOS_GERAL / f'dl_completo-{HOJE}.csv'
 ARQ_REM_EM_CADASTRAMENTO = (
-    DIR_DADOS_GERAL / f'remessas_em_cadastramento-dl-{HOJE}.xlsx'
+    DIR_DADOS_GERAL / f'rem_em_cadastramento-dl-{HOJE}.xlsx'
 )
 ARQ_REM_PAG_PROCESSADO = (
-    DIR_DADOS_GERAL / f'remessas_pag_processado_zeradas-dl-{HOJE}.xlsx'
+    DIR_DADOS_GERAL / f'rem_pag_processado_zeradas-dl-{HOJE}.xlsx'
 )
 ARQ_MONITORAMENTO = DIR_DADOS_GERAL / f'monitoramento-{HOJE}.xlsx'
 ARQ_CONTATOS_REGIONAIS = DIR_DADOS_INPUTS / 'Contatos Regionais.xlsx'
@@ -106,7 +105,7 @@ def main() -> None:
     #         nome_prestador AS prestador_nome,
     #         sigla_ramo_atividade AS ramo,
     #         data_referencia_fatura AS referencia,
-    #         numero_remessa AS remessa,
+    #         numero_rem AS remessa,
     #         NULL AS observacoes
     #     FROM db_dlipsemg_reporting.faturamento_detalhado
     #     WHERE
@@ -196,9 +195,7 @@ def main() -> None:
 
     for _, reg in df_regionais.iterrows():
         regional = reg['MUNICIPIO']
-        arq_rem_regional = (
-            DIR_DADOS_REGS / f'AGREGADO-remessas-dl-{regional}-{HOJE}.xlsx'
-        )
+        arq_rem_regional = DIR_DADOS_REGS / f'rem-dl-{regional}-{HOJE}.xlsx'
 
         salvar_xlsx_por_abas(
             {

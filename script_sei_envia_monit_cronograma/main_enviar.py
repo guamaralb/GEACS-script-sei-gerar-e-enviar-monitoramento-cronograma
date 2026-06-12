@@ -9,9 +9,9 @@ import pandas as pd
 from dotenv import load_dotenv
 from sei_automacao.acoes_completas.processo import (
     enviar_email,
+    incluir_doc_externo,
 )
-
-# from sei_automacao.acoes_completas.processo import incluir_doc_externo
+from sei_automacao.acoes_completas.ubiquo import iniciar_processo
 from sei_automacao.driver.iniciar_driver import iniciar_driver
 from sei_automacao.inicio.efetuar_login import efetuar_login
 from sei_automacao.ubiquo.acessar_processo import acessar_processo
@@ -78,56 +78,52 @@ def main() -> None:
     )
 
     for _, reg in df_regionais.iterrows():
-        municipio = reg['MUNICIPIO']
+        regional = reg['MUNICIPIO']
         email_regional = reg['EMAIL_UNIDADE_REGIONAL']
 
         path_arq_rem_regional = (
-            DIR_DADOS_REGS / f'remessas-{municipio}-{HOJE}.xlsx'
+            DIR_DADOS_REGS / f'rem-dl-{regional}-{HOJE}.xlsx'
         )
 
-        acessar_processo(driver, num_processo='2010.01.0055691/2026-10')
-
-        # espec_processo = (
-        #     f'TESTE - Monitoramento de Cronograma - Regional de {municipio}'
-        # )
-
-        # iniciar_processo(
-        #     driver,
-        #     tipo_processo='Pedidos, Oferecimentos e Informações Diversas',
-        #     especificacao=espec_processo,
-        #     nivel_acesso='Público',
-        # )
-        # incluir_doc_externo(
-        #     driver,
-        #     tipo_doc='Planilha',
-        #     num=path_arq_rem_regional.name + AGORA,
-        #     formato='Nato-digital',
-        #     data='09/06/2026',
-        #     path_anexo=path_arq_rem_regional,
-        #     nivel_acesso='Público',
-        # )
-        # incluir_doc_externo(
-        #     driver,
-        #     tipo_doc='PDF',
-        #     num='Orientações por situação da remessa - 2026',
-        #     formato='Nato-digital',
-        #     data='09/06/2026',
-        #     path_anexo=path_anexo_pdf,
-        #     nivel_acesso='Público',
-        #     fecha_alerta=True,
-        # )
+        iniciar_processo(
+            driver,
+            tipo_processo='Pedidos, Oferecimentos e Informações Diversas',
+            especificacao=(
+                f'TESTE - Monitoramento de Cronograma - Regional de {regional}'
+            ),
+            nivel_acesso='Público',
+        )
+        incluir_doc_externo(
+            driver,
+            tipo_doc='Planilha',
+            num=f'Remessas - {regional} - {HOJE}',
+            formato='Nato-digital',
+            data='09/06/2026',
+            path_anexo=path_arq_rem_regional,
+            nivel_acesso='Público',
+        )
+        incluir_doc_externo(
+            driver,
+            tipo_doc='PDF',
+            num='Orientações por situação da remessa - 2026',
+            formato='Nato-digital',
+            data='09/06/2026',
+            path_anexo=path_anexo_pdf,
+            nivel_acesso='Público',
+            fecha_alerta_doc_ja_existe=True,
+        )
         enviar_email(
             driver=driver,
             email_de='IPSEMG/GEACS <faturamento.pagamento@ipsemg.mg.gov.br>',
             emails_para=[email_regional],
             assunto=gerar_assunto_email(),
             corpo_email=gerar_corpo_email(
-                municipio=municipio, nome_anexo_pdf=path_anexo_pdf.name
+                regional=regional, nome_anexo_pdf=path_anexo_pdf.name
             ),
             nivel_acesso='Público',
         )
         logger.info(
-            'Regional %s: %s gerado', municipio, path_arq_rem_regional.name
+            'Regional %s: %s gerado', regional, path_arq_rem_regional.name
         )
 
     logger.info('Processamento concluído')
