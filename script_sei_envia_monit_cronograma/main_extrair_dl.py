@@ -43,7 +43,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-_COLS_MONIT = [
+_COLS_COM_REM = [
     'regional',
     'municipio',
     'prestador_matricula',
@@ -55,8 +55,24 @@ _COLS_MONIT = [
 ]
 
 
-def preparar_df_monit(df: pd.DataFrame) -> pd.DataFrame:
-    return df[_COLS_MONIT].assign(observacoes='')
+_COLS_COM_RB = [
+    'regional',
+    'municipio',
+    'prestador_matricula',
+    'prestador_nome',
+    'ramo',
+    'referencia',
+    'rb',
+    'valor_pagar',
+]
+
+
+def agregar_por_remessa(df: pd.DataFrame) -> pd.DataFrame:
+    return df[_COLS_COM_REM].assign(observacoes='')
+
+
+def agregar_por_rb(df: pd.DataFrame) -> pd.DataFrame:
+    return df[_COLS_COM_RB].assign(observacoes='')
 
 
 def connect_to_db():
@@ -100,22 +116,34 @@ def main() -> None:
     #     """
     #     SELECT
     #         nome_agencia_regional_contrato_prestador AS regional,
-    #         nome_regional_contrato_prestador AS regional,
+    #         nome_municipio_contrato_prestador AS municipio,
     #         numero_matricula_prestador AS prestador_matricula,
     #         nome_prestador AS prestador_nome,
     #         sigla_ramo_atividade AS ramo,
     #         data_referencia_fatura AS referencia,
-    #         numero_rem AS remessa,
+    #         numero_pagamento as rb,
+    #         sigla_situacao_fatura AS situacao,
+    #     --    valor_apresentado,
+    #     --    valor_glosado,
+    #     --    valor_adequacao_cobranca,
+    #     --    valor_pagar,
+    #         SUM(valor_pagar) AS valor_pagar,
     #         NULL AS observacoes
     #     FROM db_dlipsemg_reporting.faturamento_detalhado
     #     WHERE
     #         tipo_contrato = 'CREDPJ'
     #         AND data_referencia_fatura >= '2022-01-01'
     #         AND data_referencia_fatura <= '2025-12-01'
-    #     ORDER BY
-    #         regional ASC,
-    #         referencia ASC,
-    #         prestador_matricula ASC
+    #         AND sigla_situacao_fatura != 'PAGEFET'
+    #     GROUP BY
+    #         nome_agencia_regional_contrato_prestador,
+    #         nome_municipio_contrato_prestador,
+    #         numero_matricula_prestador,
+    #         nome_prestador,
+    #         sigla_ramo_atividade,
+    #         data_referencia_fatura,
+    #         numero_pagamento,
+    #         sigla_situacao_fatura
     #     """,
     #     con=conn,
     # )
@@ -133,9 +161,26 @@ def main() -> None:
         len(df_completo),
     )
 
-    df_rem_em_cadastramento = df_completo[
-        df_completo['situacao'] == 'CADASTRO'
-    ]
+    _group_rem = [c for c in _COLS_COM_REM if c != 'valor_pagar']
+    _group_rb = [c for c in _COLS_COM_RB if c != 'valor_pagar']
+
+    df_agg_por_rem = (
+        df_completo[_COLS_COM_REM + ['situacao']]
+        .groupby(_group_rem + ['situacao'], dropna=False)
+        .agg(valor_pagar=('valor_pagar', 'sum'))
+        .reset_index()
+    )
+
+    df_agg_por_rb = (
+        df_completo[_COLS_COM_RB + ['situacao']]
+        .groupby(_group_rb + ['situacao'], dropna=False)
+        .agg(valor_pagar=('valor_pagar', 'sum'))
+        .reset_index()
+    )
+
+    df_rem_em_cadastramento = agregar_por_remessa(
+        df_agg_por_rem[df_agg_por_rem['situacao'] == 'CADASTRO']
+    )
     df_rem_em_cadastramento.to_excel(
         ARQ_REM_EM_CADASTRAMENTO, index=False, engine='xlsxwriter'
     )
@@ -145,10 +190,12 @@ def main() -> None:
         len(df_rem_em_cadastramento),
     )
 
-    df_rem_pag_processado_vl_zerado = df_completo[
-        (df_completo['situacao'] == 'PAGPROC')
-        & (df_completo['valor_pagar'] == 0)
-    ]
+    df_rem_pag_processado_vl_zerado = agregar_por_rb(
+        df_agg_por_rb[
+            (df_agg_por_rb['situacao'] == 'PAGPROC')
+            & (df_agg_por_rb['valor_pagar'] == 0)
+        ]
+    )
     df_rem_pag_processado_vl_zerado.to_excel(
         ARQ_REM_PAG_PROCESSADO, index=False, engine='xlsxwriter'
     )
@@ -158,13 +205,13 @@ def main() -> None:
         len(df_rem_pag_processado_vl_zerado),
     )
 
-    df_em_revisao = df_completo[df_completo['situacao'] == 'EMREVISAO']
+    df_em_revisao = df_agg_por_rem[df_agg_por_rem['situacao'] == 'EMREVISAO']
 
-    df_liberado_pag = df_completo[df_completo['situacao'] == 'LIBPAGTO']
+    df_liberado_pag = df_agg_por_rem[df_agg_por_rem['situacao'] == 'LIBPAGTO']
 
-    df_pag_proc_zerado = df_completo[
-        (df_completo['situacao'] == 'PAGPROC')
-        & (df_completo['valor_pagar'] == 0)
+    df_pag_proc_zerado = df_agg_por_rb[
+        (df_agg_por_rb['situacao'] == 'PAGPROC')
+        & (df_agg_por_rb['valor_pagar'] == 0)
     ]
 
     logger.info(
@@ -199,13 +246,13 @@ def main() -> None:
 
         salvar_xlsx_por_abas(
             {
-                'EM REVISAO': preparar_df_monit(
+                'EM REVISAO': agregar_por_remessa(
                     df_em_revisao[df_em_revisao['regional'] == regional]
                 ),
-                'LIBERADO PAGAMENTO': preparar_df_monit(
+                'LIBERADO PAGAMENTO': agregar_por_remessa(
                     df_liberado_pag[df_liberado_pag['regional'] == regional]
                 ),
-                'PAGAMENTO PROCESSADO ZERADO': preparar_df_monit(
+                'PAGAMENTO PROCESSADO ZERADO': agregar_por_rb(
                     df_pag_proc_zerado[
                         df_pag_proc_zerado['regional'] == regional
                     ]
