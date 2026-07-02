@@ -16,7 +16,7 @@ selenium = "^4.39.0"
 python-dotenv = "^1.2.1"
 weasyprint = "^68.1"
 reportlab = "^4.4.10"
-sei-automacao = { develop = true, path = "../../../sei-automacao" }
+sei-automacao = { path = "../../../sei-automacao", develop = true }
 xlsxwriter = "^3.2.9"
 impyla = "^0.23.0"
 jaydebeapi = "^1.2.3"

@@ -7,14 +7,11 @@ from time import sleep
 
 import pandas as pd
 from dotenv import load_dotenv
-from sei_automacao.acoes_completas.processo import (
-    enviar_email,
-    incluir_doc_externo,
-)
-from sei_automacao.acoes_completas.ubiquo import iniciar_processo
-from sei_automacao.driver.iniciar_driver import iniciar_driver
-from sei_automacao.inicio.efetuar_login import efetuar_login
-from sei_automacao.ubiquo.acessar_processo import acessar_processo
+from sei_automacao.auth.login import efetuar_login
+from sei_automacao.driver import iniciar_driver
+from sei_automacao.processo import enviar_email, incluir_doc_externo
+from sei_automacao.ubiquo import iniciar_processo
+from sei_automacao.ubiquo.busca import acessar_processo
 from txt_email import gerar_assunto_email, gerar_corpo_email
 
 load_dotenv()
@@ -66,7 +63,7 @@ def main() -> None:
     sleep(1)
 
     df_regionais = pd.read_excel(
-        ARQ_CONTATOS_REGIONAIS, sheet_name='teste', index_col=False
+        ARQ_CONTATOS_REGIONAIS, sheet_name='dados', index_col=False
     )
     logger.info(
         'Gerando processos por regional (%d regionais)', len(df_regionais)
@@ -89,14 +86,14 @@ def main() -> None:
             driver,
             tipo_processo='Pedidos, Oferecimentos e Informações Diversas',
             especificacao=(
-                f'TESTE - Monitoramento de Cronograma - Regional de {regional}'
+                f'Monitoramento de Cronograma - Regional de {regional}'
             ),
             nivel_acesso='Público',
         )
         incluir_doc_externo(
             driver,
             tipo_doc='Planilha',
-            num=f'Remessas - {regional} - {HOJE}',
+            num=f'Remessas-{regional}-{HOJE}',
             formato='Nato-digital',
             data='09/06/2026',
             path_anexo=path_arq_rem_regional,

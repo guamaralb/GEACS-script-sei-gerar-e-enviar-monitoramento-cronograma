@@ -24,7 +24,7 @@ def gerar_corpo_email(regional: str, nome_anexo_pdf: str) -> str:
 		
 		Contamos mais uma vez com o apoio e colaboração dessa Unidade Regional para a conclusão das pendências identificadas.
 		
-		Permanecemos à disposição para esclarecimentos, que poderão ser encaminhados pelo Teams à servidora Rayane Paula Arcendino de Sousa, pelo telefone (31) 3915-2149 ou por meio deste e-mail.
+		Permanecemos à disposição para esclarecimentos, que poderão ser encaminhados por e-mail para faturamento.pagamento@ipsemg.mg.gov.br.
 		
 		
 		Atenciosamente,

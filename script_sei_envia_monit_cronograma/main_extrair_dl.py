@@ -22,7 +22,7 @@ DIR_DADOS_GERAL = DIR_DADOS / 'dl' / 'geral'
 
 
 ARQ_LOG = DIR_LOGS / f'extrair-{AGORA}.log'
-ARQ_COMPLETO = DIR_DADOS_GERAL / f'dl_completo-{HOJE}.csv'
+ARQ_COMPLETO = DIR_DADOS_INPUTS / f'dl_completo-{HOJE}.csv'
 ARQ_REM_EM_CADASTRAMENTO = (
     DIR_DADOS_GERAL / f'rem_em_cadastramento-dl-{HOJE}.xlsx'
 )
@@ -241,7 +241,7 @@ def main() -> None:
     )
 
     for _, reg in df_regionais.iterrows():
-        regional = reg['MUNICIPIO']
+        regional = reg['MUNICIPIO_DL']
         arq_rem_regional = DIR_DADOS_REGS / f'rem-dl-{regional}-{HOJE}.xlsx'
 
         salvar_xlsx_por_abas(
